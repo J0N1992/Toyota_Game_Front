@@ -1,0 +1,199 @@
+.alertOver {
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 0.5;
+	position: fixed;
+	display: block;
+}
+
+.error-tip{
+	
+	font-size: 0.5rem;
+	color: red;
+	text-align: left;
+	width: 70%;
+	
+}
+
+
+.alertWin{
+	position: absolute;
+	left: 0;
+	top: 3rem;
+	width: 100%;
+	height: 20rem;
+	z-index: 999;
+	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#phb{
+	
+	display: none;
+	background-image: url(../img/微信图片_20200114101230.png);
+	background-size: 100% 100%;
+	
+}
+
+
+
+.phb_table{
+	text-overflow:ellipsis;
+	width: 70%;
+	height: 12rem;
+	border: transparent;
+	border-spacing: 0;
+	text-align: center;
+	margin-top: 0.5rem;
+}
+
+.phb_table img{
+	
+	width: 1rem;
+	height: 1rem;
+	border-radius: 0.5rem;
+	
+	}
+
+
+ .phb_table tr:nth-child(odd){
+	
+	background-color: rgb(240,212,188);
+	
+}
+.table_title{
+	background-color: rgb(226,175,156) !important;
+	color: rgb(120,61,37);
+	height: 11.111%;
+}
+.paging{
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	color: rgb(128,95,58);
+	margin-top: 0.5rem;
+}
+
+
+
+#yxjl{
+	
+	display: flex;
+	background-image: url(../img/微信图片_20200114101230.png);
+	background-size: 100% 100%;
+	
+	
+}
+.jl_content{
+	
+	width: 70%;
+	height: 80%;
+	overflow: auto;
+}
+.jl_title{
+	
+	
+	width: 3rem;
+	height: 1rem;
+	background-color: rgb(217,63,51);
+	color:white;
+	font-weight: 800;
+	border-radius: 0.5rem;
+	text-align: center;
+	line-height: 1rem;
+	
+	
+	
+}
+
+
+#login{
+	display: flex;
+	background-image: url(../img/login_bg.png);
+	background-size: 100% 100%;
+	width: 80%;
+	left: 10%;
+	height: 17rem;
+}
+.headerImg{
+	
+	
+	width: 4rem;
+	height: 4rem;
+	border-radius: 2rem;
+	border : 2px solid white;
+	margin-bottom: 2rem;
+	
+}
+#WXHeaderImg{
+	width: 100%;
+	border-radius: 2rem;
+}
+
+#ksws{
+	
+	width: 6rem;
+	height: 2rem;	
+	margin-top: 1rem;
+}
+.login_input{
+	outline-color: invert;
+	outline-style: none;
+	outline-width: 0px;
+	border: none;
+	border-style: none;
+	text-shadow: none;
+	-webkit-appearance: none;
+	-webkit-user-select: text;
+	outline-color: transparent;
+	box-shadow: none;
+	width: 70%;
+	
+	padding-left: 0.5rem;
+	border-radius: 0.2rem;
+	
+	height: 1.7rem;
+	background-color: rgb(199,183,150);
+	border-radius: 0.5rem;
+	color: rgb(125,91,52);
+	margin-bottom: 1rem;
+}
+#gameOver{
+	display: flex;
+	background-image: url(../img/微信图片_20200115172005.png);
+	background-size: 100% 80%;
+	background-repeat:  no-repeat;
+	width: 80%;
+	left: 10%;
+	height: 23rem;
+	
+	
+}
+.gameRec{
+	
+	position: relative;
+	top:-0.5rem;
+	color: rgb(147,14,26);
+	font-size: 1.5rem;
+	font-weight: 800;
+	
+	
+	
+}
+#shareRec{
+	
+	background-image: url(../img/微信图片_20200115213839.jpg);
+	background-size: 100% 100%;
+	top: 0rem;
+	height: 100%;
+}
+
+.GameOverWXHeaderImg{
+	width: 100%;
+	border-radius: 50%;
+}

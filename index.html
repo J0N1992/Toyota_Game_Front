@@ -1,0 +1,2582 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="referrer" content="always">
+<meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="pragma">
+<meta content="0" http-equiv="expires">
+<meta name="referrer" content="always">
+<meta content="telephone=no, address=no" name="format-detection">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" /> <!-- apple devices fullscreen -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<title>舞狮子喜迎新春</title>
+
+
+<script type='text/javascript'>
+
+(function(){
+    var element = new Image();
+    var hdGameHost = '';
+    // Object.defineProperty(element,'id',{get:function(){window.location.href="https://hd.faisco.cn/empty.jsp?aid=7020498&gameId=158&openId=oosnVwuzoyEHE2a8ztSyhSbR3U60"}});
+
+})();
+
+var fromCanal = '-1';
+if(false){
+    parent = top = window;
+}
+
+    var g_serverTime = 1578624147672;
+    var g_timeDeviation = g_serverTime - new Date().getTime(); //服务器时间与系统时间偏差
+    var g_rem = 20;
+    (function(win){
+        var orientationX = false; //是否横屏进来
+        if(win.orientation==90||win.orientation==-90){
+            orientationX = true;
+        }
+        var docEl = win.document.documentElement,tid;
+        function refreshRem1(){
+            g_rem = docEl.getBoundingClientRect().width/16;
+            !g_rem && (g_rem = 20);
+            docEl.style.fontSize = g_rem + 'px';
+        }
+        function refreshRem2(){
+            g_rem = docEl.getBoundingClientRect().width/16;
+            if(!g_rem){
+                return refreshRem1();
+            }
+            var width = docEl.getBoundingClientRect().width;
+            var d = win.document.createElement('div');
+            d.style.width = '1rem';
+            d.style.display = "none";
+            docEl.firstElementChild.appendChild(d);
+            var defaultFontSize = parseFloat(window.getComputedStyle(d, null).getPropertyValue('width'));
+            docEl.firstElementChild.removeChild(d);
+            docEl.style.fontSize = (g_rem/defaultFontSize)*100 + '%';
+        }
+
+
+        
+            var remConf = {"refreshRem2":[{"vendor":"vivo","brands":[]},{"vendor":"HUAWEI","brands":[]},{"vendor":"OPPO","brands":[]},{"vendor":"ONEPLUS","brands":["A5000"]},{"vendor":"MI","brands":["9","Note 3","CC 9"]}],"refreshRem1":[{"vendor":"HUAWEI","brands":["HMA-AL00","EVA-AL10","PAR-AL00","EML-AL00","VOG-AL00"]},{"vendor":"vivo","brands":["x23","Y85A","Xplay6","x20","Y79A"]},{"vendor":"OPPO","brands":["R9 Plusm","R11s"]}]};
+            var rem2RegStr = '';
+            var rem1RegStr = '';
+            for (var i = 0, len = remConf.refreshRem2.length; i < len; i++) {
+                rem2RegStr += ((i > 0 ? '|' : '') + remConf.refreshRem2[i].vendor);
+                if (remConf.refreshRem2[i].brands.length > 0)
+                    rem2RegStr += "(\\s?(" + remConf.refreshRem2[i].brands.join('|') + "))";
+            }
+            for (var i = 0, len = remConf.refreshRem1.length; i < len; i++) {
+                rem1RegStr += ((i > 0 ? '|' : '') + remConf.refreshRem1[i].vendor);
+                if (remConf.refreshRem1[i].brands.length > 0)
+                    rem1RegStr += "(\\s?(" + remConf.refreshRem1[i].brands.join('|') + "))";
+            }
+            var refreshRem = (new RegExp(rem2RegStr, 'i').test(navigator.userAgent)) && !(new RegExp(rem1RegStr, 'i').test(navigator.userAgent)) ? refreshRem2 : refreshRem1;
+        
+
+
+        try{
+            win.addEventListener("orientationchange", function() {//触发手机横屏竖屏事件
+                if(orientationX){
+                    location.reload();
+                }
+            }, false);
+        }catch(e){}
+        win.addEventListener('pageshow', function(e) {
+            if (e.persisted) {
+                clearTimeout(tid);
+                tid = setTimeout(refreshRem, 100);
+            }
+        }, false);
+        refreshRem();
+    })(window);
+
+    // 下面这段代码，主要是为了防止用户调整微信浏览器字体大小导致的rem异常。
+    (function(){
+        if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function"){
+            handleFontSize();
+        }else{
+            if (document.addEventListener){
+                document.addEventListener("WeixinJSBridgeReady", handleFontSize, false);
+            }else if(document.attachEvent){
+                //IE浏览器，非W3C规范
+                document.attachEvent("onWeixinJSBridgeReady", handleFontSize);
+            }
+        }
+        function handleFontSize(){
+            // 设置网页字体为默认大小
+            WeixinJSBridge.invoke('setFontSizeCallback', { 'fontSize': 0 });
+            // 重写设置网页字体大小的事件
+            WeixinJSBridge.on('menu:setfont', function(){
+                WeixinJSBridge.invoke('setFontSizeCallback', { 'fontSize': 0 });
+            });
+        }
+    })();
+</script>
+
+
+
+<link rel="preload" href="//hdg.faisys.com/js/comm/jquery/jquery-core.min.js?v=201910141608" as="script" />
+
+<link href="css/base.min.css?v=202001021054" rel="stylesheet" type="text/css" />
+
+<link href="css/csyx.min.css?v=201910141608" rel="stylesheet" type="text/css" />
+
+<link href="css/fission.min.css?v=201910141608" rel="stylesheet" type="text/css" />
+
+<link href="css/weui.min.css?v=201911041140" rel="stylesheet" type="text/css" />
+
+<link href="css/index.css?v=201911041140" rel="stylesheet" type="text/css" />
+
+
+
+<script type="text/javascript">  
+</script>
+
+<script type='text/javascript'>
+;(function(){
+    var fList = ["WeixinJSBridge","document.querySelector('#btnOk').click","document.querySelector('.msg').innerText","document.querySelector('.icon-remind').nextElementSibling","HdGame","$"];
+    var filter = function(){var oldErr=window.onerror;if(!oldErr)return;window.onerror=function(msg){for(var i=0;i<fList.length;i++){if(~msg.indexOf(fList[i])){return}}oldErr.apply(this,arguments)}};
+    window.onerror ? filter() : (document.getElementsByTagName("script")[0].onload = filter);
+})();
+</script>
+
+</head>
+<body class="gameTpl_-1">
+
+
+<!-- loading页面 -->
+<div id="preloadPage" class="bg">
+    
+    <div class="spinner">
+      <div class="spinner-container container1">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+      </div>
+      <div class="spinner-container container2">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+      </div>
+      <div class="spinner-container container3">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+      </div>
+    </div>
+    
+    <div class="info"><span id="loadPercent">0</span>%</div>
+    <div id="userPreload" data-src="http://7020498.h40.faiusr.com/4/3W4mfD340m934D72cTdwfzMkZmN0UzM.png"></div>
+</div>
+<script type="text/javascript">
+(function(){var _hasInit=false;var _hasFinish=false;var _hasStrting=false;var percentText=document.getElementById('loadPercent');var endCallback;function _setPercentage(percent){percentText.innerText=percent}function _initCustomPreLoad(callback){var logoImg=document.getElementById('preloadImg');function initLogoImg(){var img=logoImg;var h=img.height;var w=img.width;var bottomPageInfoDeg=-Math.atan(w/h)-Math.PI/2;var canvas=document.getElementById('preloadCanvas');var ctx=canvas.getContext('2d');var ratio=(window.devicePixelRatio||1)/(ctx.backingStorePixelRatio||ctx.webkitBackingStorePixelRatio||ctx.mozBackingStorePixelRatio||ctx.msBackingStorePixelRatio||ctx.oBackingStorePixelRatio||ctx.backingStorePixelRatio||1);var drawImg=function(){ctx.fillStyle='#FFFFFF';ctx.fillRect(0.2*g_rem*ratio,0.2*g_rem*ratio,w*ratio,h*ratio);ctx.drawImage(img,0.2*g_rem*ratio,0.2*g_rem*ratio,w*ratio,h*ratio)};if(h===w){if(h>3.5*g_rem){h=w=3.5*g_rem}drawImg=function(){ctx.save();ctx.beginPath();ctx.arc(canvas.width/2,canvas.height/2,w/2*ratio,0,2*Math.PI);ctx.clip();ctx.fillStyle='#FFFFFF';ctx.fill();ctx.drawImage(img,0.2*g_rem*ratio,0.2*g_rem*ratio,w*ratio,h*ratio);ctx.restore()}}else{if(w>h&&w>8*g_rem){h=8*g_rem*h/w;w=8*g_rem}else{if(h>w&&h>8*g_rem){w=8*g_rem*w/h;h=8*g_rem}}}canvas.width=(w+0.4*g_rem)*ratio;canvas.height=(h+0.4*g_rem)*ratio;canvas.style.width=w+0.4*g_rem+'px';canvas.style.height=h+0.4*g_rem+'px';if(h===w){ctx.beginPath();ctx.arc(canvas.width/2,canvas.height/2,canvas.width/2,0,2*Math.PI);ctx.clip()}ctx.strokeStyle='#69C5FF';ctx.lineWidth=8*g_rem*ratio;_setPercentage=function(percent){percentText.innerText=percent;ctx.beginPath();ctx.arc(canvas.width/2,canvas.height/2,4*g_rem*ratio,bottomPageInfoDeg,bottomPageInfoDeg+percent*(2*Math.PI/100));ctx.stroke();drawImg()};callback&&callback()}if(logoImg.complete){initLogoImg()}else{logoImg.onload=initLogoImg}}function init(callback){if(false)return;var preloadStyle=1;if(_hasInit)return finish();function finish(){callback&&callback();if(!_hasInit){_setPercentage(0);_hasInit=true}}window.scrollTo(0,0);if(preloadStyle===3)_initCustomPreLoad(finish);if(preloadStyle===1)finish()}function start(){if(_hasStrting)return;init(function(){_hasStrting=true;_hasFinish=false;var percent=0;function go(){var time=1000/60;time*=_hasFinish?3:Math.max(3,percent/10);if(percent===99&&_hasFinish){_setPercentage(100);_hasStrting=false;if(endCallback){endCallback();endCallback=null}var preloadPage=document.getElementById('preloadPage');setTimeout(function(){preloadPage.style.display='none'},500);preloadPage.className+=' leftClose';return}setTimeout(function(){var prevPercent=percent;percent=Math.min(percent+(_hasFinish?8:1),99);if(prevPercent!==percent){_setPercentage(percent)}go()},time)}go()})}function end(callback){if(_hasFinish)return;if(!_hasStrting)return;init(function(){_hasFinish=true;endCallback=callback})}start();window.preloadEnd=end})();
+</script>
+
+<!-- 遮蔽层 -->
+<div class="alertOver"></div>
+
+
+
+    <input id="jumpDownImg" type="hidden" value="http://7020498.h40.faiusr.com/4/158/ACgIABAEGAAg1Za6xQUoltPsogQwlgE4_gE.png" >
+    <div class="ajaxLoadBg">
+        <div class="ajaxLoadBar "></div>
+    </div>
+    <div class="body">      
+        <div class="home">
+            <div id="homeBgBox" style = "height: 29.5rem;">
+                <img id="homeBg" src="img/bg.jpg"/>    
+            </div>  
+            <div class="gameInfoBox">
+                <!--<div class="titleImg imgContainer absCenter">
+                    <img id="titleImg" class="slaveImg abs" webp_src="https://7020498.h40.faiusr.com/4/158/ACgIABAEGAAgk9XH0QUo6I-_mAcwgAU4wAI.png" style="width:15.75rem;height:8rem;top:0.65rem;left:0rem;height: ;"/>
+                </div>               -->
+            </div>
+			
+
+	
+
+
+<div id="playInfo" class="abs editTarget-playInfo hide" style="width:9rem;text-align:center;">
+	<div class="dayPlayHint">您今天还有 <span id="count" class="specil todayPlayCount"></span> 次参与机会</div>
+	<div class="totalPlayHint">您还有 <span class="totalPlayCount specil"></span> 次参与机会</div>
+	<div class="dayPlayHint4Total">今天有 <span class="count specil todayPlayCount"></span> 次</div>
+</div>	
+            <div id="startBtn" class="startBtn imgContainer absCenter" style="top:0rem;">
+                <img id="startBtnImg" class="slaveImg abs" src="img/微信图片_20200114101253.png" style="width:10rem;height:3rem;top:21.2rem;left:3.1rem;"/>    
+            </div>
+  <!-- 此处可根据背景图进行相对布局 -->          
+            
+ <div class="ruleImg imgContainer absCenter" _mouseIn="0" onclick="showRule(isAnimation=false);">
+	<div id="yxjlImg" class="slaveImg abs  notNeedFatherChage outSpecialDivAutoFit hd-img-fillDiv" style='width:4.5rem;height:1.5rem;top:25.2rem;left:3rem;background-image: url(img/hdjl.png);'></div>
+ </div>
+	
+<div class="ruleImg imgContainer absCenter">
+	<div id="phbImg" class="slaveImg abs  notNeedFatherChage outSpecialDivAutoFit hd-img-fillDiv" style='width:4.5rem;height:1.5rem;top:25.2rem;left:8rem;background-image: url(img/微信图片_20200114101301.png);'></div>
+</div>
+	
+	
+</div>
+
+
+<!-- 弹框-->
+
+<div id ="alertWin">
+	
+	<!-- 排行榜 -->
+	<div id = "phb" class = "alertWin">
+		<!-- 让关闭按钮脱离flex布局-->
+		<img class = "closeBtn" style="width: 2rem;height: 2rem;position: absolute;right: 0.5rem;top:-0.2rem" src ="img/微信图片_20200114101243.png"/>
+		<img id = "phbTitle" style="width: 33%;margin-top: 1.2rem;" src ="img/微信图片_20200114101239.png"/>
+		
+		<table class = "phb_table">
+			<tr class = "table_title">
+				<td>排名</td>
+				<td>姓名</td>
+				<td>高度</td>
+				<td>段位</td>
+				<td>奖品</td>
+				
+			</tr>
+			<tr>
+				<td>abc</td>
+				<td>agbcdfddfdfdfdffd</td>
+			</tr>
+			<tr>
+				<td>agc</td>
+				<td>abc</td>
+			</tr>
+			<tr>
+				<td>agc</td>
+				<td>abc</td>
+			</tr>
+			<tr>
+				<td>agc</td>
+				<td>abc</td>
+			</tr>
+				<tr>
+				<td>abc</td>
+				<td>agbc</td>
+			</tr>
+			<tr>
+				<td>agc</td>
+				<td>abc</td>
+			</tr>
+			<tr>
+				<td>agc</td>
+				<td>abc</td>
+			</tr>
+			<tr>
+				<td>agc</td>
+				<td>abc</td>
+			</tr>
+		</table>
+		
+		<div class = "paging">
+			<span id = "totalPage">1/999</span><span>页</span>
+			<span>第</span><span id = "nowPage">1</span><span>页</span>跳转
+			<span id = "beforePage">上一页</span><span id = "nextPage">下一页</span>
+		</div>
+		<div id = "MyRank" style="margin-top: 0.2rem;color: rgb(191,47,2);font-size: 0.8rem;font-weight: 800;"><span>您的当前排名：</span><span id = "nowRank">9999</span><span>名</span></div>
+		<div style="color: rgb(128,95,58);font-size: 0.5rem;position: relative;top:0.3rem">本活动最终解释权归广汽丰田工会所有</div>
+	</div>
+	
+	
+	<!-- 锦囊-->
+	<div id = "yxjl" class = "alertWin">
+		<!-- 让关闭按钮脱离flex布局-->
+		<img class = "closeBtn" style="width: 2rem;height: 2rem;position: absolute;right: 0.5rem;top:-0.2rem" src ="img/微信图片_20200114101243.png"/>
+		<img id = "phbTitle" style="width: 33%;margin-top: 1.2rem;" src ="img/微信图片_20200114101239.png"/>
+		<br>
+		<div class = "jl_content">
+		
+		<p class = "jl_title">游戏指引 </p>
+		<br>
+		<p>通过左右晃动屏幕，重力感应控制醒狮向上跳，方向失误没有登陆跳板则游戏结束。</p>
+		<br>
+		<p class = "jl_title">游戏规则</p>
+		<br>
+		<p>1、参与游戏需输入正确姓名及工号，进行报名；</p>
+		<p>2、醒狮跳出的高度越高，则排名越高；</p>
+		<p>3、醒狮没有登陆跳板坠落<img src = "img/乒乓球协会.png" style = "width: 1.5rem;">，则游戏结束；</p>
+		<p>4、游戏不限制参与次数，以最佳成绩进行排名；</p>
+		<p>5、游戏周期为1月22日-2月9日，周期内可以不断挑战，更新自己的排名，2月9日24:00游戏截止，按照最终的排名进行奖励。</p>
+		<br>
+		<p class = "jl_title">游戏奖励</p>
+		<br>
+		<p><img src = "img/微信图片_20200114101235.png" style="width: 100%;"/></p>
+		<p> 奖品（给到平台关爱积分）将在活动结束后一周内进行发放，具体发放时间请以工会通知为准。</p>
+		<br>
+		<p class = "jl_title">主办单位</p>
+		<br>
+		<p>广汽丰田工会</p>
+
+		<div style="color: rgb(128,95,58);font-size: 0.5rem;position: relative;top:0.3rem">本活动最终解释权归广汽丰田工会所有</div>
+		</div>
+		
+		
+	</div>
+	
+	
+	<div id = "login" class = "alertWin">
+		
+		<div class = "headerImg">
+			
+			<img id = "WXHeaderImg" src = "" />
+			
+		</div>
+		
+		
+		<input class ="login_input" id = "userName" placeholder="姓名" />
+		<input class ="login_input" id = "staffId" placeholder="工号" />
+		
+		<img id = "ksws" src = "img/微信图片_20200115101926.png">
+	</div>
+	
+	<div id = "gameOver" class = "alertWin">
+		<img class = "closeBtn" style="width: 2rem;height: 2rem;position: absolute;right: 0.5rem;top:-0.2rem" src ="img/微信图片_20200114101243.png"/>
+		<div class = "headerImg" style="position: relative;top:-2.5rem;margin-bottom: 0;">
+			
+			<img class = "GameOverWXHeaderImg" src = "" />
+			
+		</div>
+		
+		<div class = "gameRec">24393分</div>
+		<div style="color:rgb(119,48,54);margin-top: -0.3rem;">您的最佳排名：<span id = "bestRec">13</span>名</div>
+		<div style="color:rgb(143,14,5);margin-top: 0.5rem;">2020年文体协会会员招募开始啦！</div>
+		<div style="color:rgb(143,14,5);margin-top: 0.1rem;">点击下方进行了解</div>
+		<img id = "ljxhzx" style="width: 7rem;margin-top: 0.3rem;" src = "img/微信图片_20200115163337.png">
+		<img id = "zctz" style="width: 7rem;margin-top: 0.3rem;" src = "img/微信图片_20200115163325.png">
+		<div style="color: rgb(128,95,58);font-size: 0.5rem;position: relative;top:0.5rem">本活动最终解释权归广汽丰田工会所有</div>
+
+		<div style="display: flex;flex-direction: row;position: relative;top:2rem;justify-content: space-around;width: 100%;">
+			
+			<img name = "yxjl_alert" style="width: 5rem;height: 1.7rem;" src = "img/微信图片_20200115163357.png">
+			<img name = "phb_alert" style="width: 5rem;height: 1.7rem;"  src = "img/微信图片_20200115210009.png">
+			
+		</div>
+			<img name = "fxcj" style="width: 5rem;position: relative;top:2.5rem" src = "img/微信图片_20200115205934.png">
+	</div>
+	<div id  ="shareRec" class = "alertWin"></div>
+	
+</div>
+
+
+         
+      
+        <div class="gameBox hide gameBgBox">
+            <div id="gameBgBox">
+                <img id="gameBg" webp_src="img/gameBoxBg.png" style="width:100%;height:auto;"/>
+				<div id="courseBg" class="course bg hide"></div>	
+            </div>
+            
+<div id="gameTopBar" class="gameTopBar" style="color:rgb(255, 255, 255);background-color:rgba(255, 255, 255, 0)">
+	<div class="userInfoBox">
+		
+		<div  class="userImgBox" style="border-color:rgb(255, 255, 255)"><img class="userImg" id = "gameUserHeaderImg" src=""  /></div>
+		
+					
+			<div id="grade" class="grade">0</div>
+			
+	</div>
+	<div class="timeBox">
+		时间<br><span class="time">0</span>
+	</div>
+</div>	
+			<div id="gamePlayPanel" class="gamePlayPanel">
+				
+                <img name="cloudImg" src="img/乒乓球协会.png" style="position:absolute;width:5.5rem;height:1.5rem;top:0;left:0;opacity: 0;"/>
+                <img name="cloudImg" src="img/书影画协会.png" style="position:absolute;width:5.5rem;height:1.5rem;top:0;left:0;opacity: 0;"/>
+                <img name="cloudImg" src="img/桌球协会.png" style="position:absolute;width:5.5rem;height:1.5rem;top:0;left:0;opacity: 0;"/>
+                <img name="cloudImg" src="img/棋牌协会.png" style="position:absolute;width:5.5rem;height:1.5rem;top:0;left:0;opacity: 0;"/>
+                <img name="cloudImg" src="img/歌舞协会.png" style="position:absolute;width:5.5rem;height:1.5rem;top:0;left:0;opacity: 0;"/>
+                <img name="cloudImg" src="img/篮球协会.png" style="position:absolute;width:5.5rem;height:1.5rem;top:0;left:0;opacity: 0;"/>
+                <img name="cloudImg" src="img/网球协会.png" style="position:absolute;width:5.5rem;height:1.5rem;top:0;left:0;opacity: 0;"/>
+               
+               
+                <img name="cloudImg" src="img/羽毛球协会.png" style="position:absolute;width:5.5rem;height:1.5rem;top:0;left:0;opacity: 0;"/>
+                <img name="cloudImg" src="img/足球协会.png" style="position:absolute;width:5.5rem;height:1.5rem;top:0;left:0;opacity: 0;"/>
+                <img name="cloudImg" src="img/钓鱼协会.png" style="position:absolute;width:5.5rem;height:1.5rem;top:0;left:0;opacity: 0;"/>
+                <img name="cloudImg" src="img/长跑协会.png" style="position:absolute;width:5.5rem;height:1.5rem;top:0;left:0;opacity: 0;"/>
+                
+				<canvas id="canvas">你的浏览器不支持canvas，请换个牛逼点的浏览器，谢谢</canvas>
+			</div>
+        </div>     
+        
+<div id="spxdPage"></div>
+<div id='_hdOpenIdDiv' class='hide'></div><!-- 存放openId的节点 -->
+<div id="pageMusic" style="position:absolute;top:0;height:0;"></div>
+
+	
+
+
+<div id="poupInfoBox">
+    <div class="poupHead">
+        <div class="poupTitleBox">
+            <div id="actionExpBtn" class="poupTitleMune checked" _flag="2">
+                <div class="item">活动说明</div>
+            </div>
+            
+            <div id="ranBtn" class="poupTitleMune " _flag="1">
+                <div class="item">排行榜</div>
+            </div>
+            
+            
+            <div id="prizeBtn" class="poupTitleMune" _flag="3">
+                <div class="item">我的奖品<span id='Award_Round_Dot' class='redDot hide'></span></div>
+            </div>
+            <div id="winnerBtn" class="poupTitleMune hide" _flag="4">
+                <div class="item">获奖名单</div>
+            </div>
+            
+            <div class="poupSlideBar">
+                <div class="slideBarTip transitionPanel"></div>
+            </div>
+        </div>
+        <div class="poupClose"></div>
+        <div style="clear:both; height:0"></div>
+    </div>
+    <div id="popTabBox" class="popTabBox transitionPanel" style="left:0">
+        
+        <div id="ruleBox" class="poupMain" _flag="2" style="-webkit-overflow-scrolling:touch;">
+            <div class="poupMainInfo">
+                
+				<div id="awardLine" class="poupLine" data-sortKey="a" >
+					<div class="mainTitle">活动奖品</div>
+					<div id="awardLineBox">
+					<div class='unComfortLine awardItem '><span class='awardStyle'>一等奖</span> : <span class='award'>价值100元礼品</span></div>
+<div class='unComfortLine awardItem '><span class='awardStyle'>二等奖</span> : <span class='award'>价值50元礼品</span></div>
+<div class='unComfortLine awardItem '><span class='awardStyle'>三等奖</span> : <span class='award'>价值10元礼品</span></div>
+<div class='unComfortLine awardItem hide'><span class='awardStyle'>四等奖</span> : <span class='award'>价值5元小礼品</span></div>
+<div class='unComfortLine awardItem hide'><span class='awardStyle'>五等奖</span> : <span class='award'>价值5元小礼品</span></div>
+<div class='unComfortLine awardItem hide'><span class='awardStyle'>六等奖</span> : <span class='award'>价值5元小礼品</span></div>
+<div class='unComfortLine awardItem hide'><span class='awardStyle'>七等奖</span> : <span class='award'>价值5元小礼品</span></div>
+<div class='unComfortLine awardItem hide'><span class='awardStyle'>八等奖</span> : <span class='award'>价值5元小礼品</span></div>
+<div class='awardItem anwei hide'><span class='awardStyle'>安慰奖</span> : <span class='award'>价值5元小礼品</span></div>
+
+					</div>
+					<div id="selfAwardLine" class="hide" style="word-wrap: break-word;"></div>
+                </div>
+                
+				<div id="gameDateTime" class="poupLine" data-sortKey="b">
+					<div class="mainTitle">活动时间</div>
+					<p><span id="startDate">2016年12月21日 14:19</span>&nbsp;-&nbsp;<span id="endDate">2016年12月28日 14:19</span></p>
+				</div>
+				<div class="hostLine poupLine" data-sortKey="c">
+					<div class="mainTitle">主办单位</div>
+					<p><a class="hostName"   /></a></p>
+				</div>
+				
+				<div id="skillLine" class="skillLine poupLine" data-sortKey="d" data-UPlan=false>
+					<div class="skillCont">
+						<div class="mainTitle">技术支持</div>
+						
+						<p>页面技术由 <a class="skillName"  href="http://mp.weixin.qq.com/s?__biz=MjM5MTk5MjI3OA==&mid=209854000&idx=1&sn=82241d924839270d3ea820ad2d56c01b#wechat_redirect" />凡科互动</a> 提供，技术支持方仅提供页面技术，不承担由活动引起的相关法律责任</p>
+					</div>
+				</div>
+				
+				<div id="explainBox" class="poupLine" data-sortKey="e">
+					<div class="mainTitle">活动说明</div>
+					<div id="exlainInfo"></div>
+				</div>
+                
+                <div id="activeRuleBox" class="poupLine " data-sortKey="f">
+                    <div class="mainTitle">活动规则</div>
+                    
+                    <p id="explaiDrawInfoBox" class="">
+                        <span id="haveScore">达到 <span id="scoreLimit" class="scoreLimit">100</span><span class="gameScoreUnit">分</span><span id="exlainDrawFont">即可获得抽奖机会<span id="punctuation">，</span></span></span>
+                        
+                        <span id="directDrawInfoBox" class=""><span class="drawTotalFont">活动期间总抽奖机会共 <span id="totalDrawTimeLimit">6</span> 次，1天只能抽</span><span class="everyOneFont hide">每人<span class="dayFont">每日</span>有</span> <span id="drawTimesLimit">3</span> 次<span class="chanceFont hide">抽奖机会</span>。<br>
+                        </span>
+                        
+                    </p>
+                    
+                    <p id="explainPlayInfoBox" class="hide ">
+                        
+                        <span id="rankPlayInfoBox">
+                            <span class="playTotalFont">活动期间总参与机会共 <span class="playTotalLimit">10</span> 次，1天只能参与</span><span class="everyOneFont hide">每人<span class="dayFont">每日</span>有</span> <span class="playTimesLimitShow">5</span> 次<span class="chanceFont hide">参与机会</span>。<br>
+                        </span>
+                        
+                    </p>
+                    
+                    <p id="explainOnceAccessKey" class="hide">输入一次密码即可获得一次<span class="text">抽奖</span>机会</p>
+                </div>
+                
+				<!--<div id="" style="font-size: 0.6rem; position: relative;" class="noMove">投诉</div>-->
+			</div>
+			<div class='attentionBox'>
+				<div class='hdskillInfo skillInfo theRunningAdClass'><a class="theSpecialTarget" href='http://mp.weixin.qq.com/s?__biz=MjM5MTk5MjI3OA==&#x26;mid=209854000&#x26;idx=1&#x26;sn=82241d924839270d3ea820ad2d56c01b#rd'>我也要创建春节活动</a><span class='gotoFlag'><i></i></span></div> 
+				<div class='holdBox'></div>
+			</div>
+        </div>
+        
+        <div id="rankBox" class="poupMain" _flag="1" style="-webkit-overflow-scrolling:touch;" >
+        <div class="poupMainInfo">
+            <div id="noRank" class=''>暂无排名</div>
+            <div id="rankMain" class="getRankHeight hide">
+                <div style="margin-top:0.7rem;margin-left: 0.25rem;">当前排名：<span id="rank"></span> （只显示前<span id="showRankNum">100</span>名）</div>
+                <div style="padding:0rem 0.5rem">
+                    <table class="rankTable" cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr style="line-height: 1rem;">
+                        <th>排行</th>
+                        <th>头像</th>
+                        <th>昵称</th>
+                        <th>成绩</th>
+                        </tr>
+                    </thead>
+                    </table>
+                </div>
+            </div>
+            <div id="rankHeight">
+            <table id="rankInfoBox" class="rankTable" cellspacing="0" cellpadding="0" style="margin-top: 0;"></table>
+            </div>
+        </div>
+            <div class='attentionBox'>
+                <div class='hdskillInfo skillInfo theRunningAdClass'><a class="theSpecialTarget" href='http://mp.weixin.qq.com/s?__biz=MjM5MTk5MjI3OA==&#x26;mid=209854000&#x26;idx=1&#x26;sn=82241d924839270d3ea820ad2d56c01b#rd'>我也要创建春节活动</a><span class='gotoFlag'><i></i></span></div> 
+                <div class='holdBox'></div>
+            </div>
+            </div>
+        
+        <div id="awardBox" class="poupMain" _flag="3" >
+            <div id="awardInfoBox">
+                <div id="awardInfo"><div style="line-height: 2.6rem">暂无中奖记录</div></div>
+
+                <div id="awardContactInfo" class="hide">
+                    <div class="titleLine"><span class="title">联系信息</span></div>
+                    <div class="contactGroup">
+                        <div class="contactItem contactName hide">姓名： <span>monica</span></div>
+                        <div class="contactItem contactPhone hide">电话： <span>13200000000</span></div>
+                        
+                        <div class="contactItem contactAddress hide">地址： <span>广东省广州市海...</span></div>
+                        
+                    </div>
+                    <div class="updateBtn abs">修改</div>
+                </div>
+            </div>
+            <div class='attentionBox'>
+                <div class='menuBtnBox' >
+                    <a class='menuName'>关注我们</a>
+                </div>
+                <div class='hdskillInfo skillInfo theRunningAdClass'><a class="theSpecialTarget" href='http://mp.weixin.qq.com/s?__biz=MjM5MTk5MjI3OA==&#x26;mid=209854000&#x26;idx=1&#x26;sn=82241d924839270d3ea820ad2d56c01b#rd'>我也要创建春节活动</a><span class='gotoFlag'><i></i></span></div> 
+                <div class='holdBox'></div>
+            </div>
+        </div>
+        
+        <div id="regAwardBox" class="poupMain" _flag="4" style="-webkit-overflow-scrolling:touch;">
+		<div class="poupMainInfo">
+		    <div id="noRegAward" class="hide" style="margin-left:3px;">尚未公布获奖名单，详情请查看活动说明</div>
+		    <div id="regAwardMain" style="display:none;">
+			
+				<div class="regAwardList">
+				    <div class="mainTitle">一等奖</div>
+				    <div class="playerName" style="margin-bottom:12px;"></div>
+				</div>
+			
+				<div class="regAwardList">
+				    <div class="mainTitle">二等奖</div>
+				    <div class="playerName" style="margin-bottom:12px;"></div>
+				</div>
+			
+				<div class="regAwardList">
+				    <div class="mainTitle">三等奖</div>
+				    <div class="playerName" style="margin-bottom:12px;"></div>
+				</div>
+			
+			  </div>
+		</div>
+		<div class='attentionBox'>
+			<div class='hdskillInfo skillInfo theRunningAdClass'><a class="theSpecialTarget" href='http://mp.weixin.qq.com/s?__biz=MjM5MTk5MjI3OA==&#x26;mid=209854000&#x26;idx=1&#x26;sn=82241d924839270d3ea820ad2d56c01b#rd'>我也要创建春节活动</a><span class='gotoFlag'><i></i></span></div> 
+			<div class='holdBox'></div>
+		</div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--<div id="activityKit" class="poupMain bg hide">
+    <div class="arrow" id="arrow"></div>
+    <div id="tip_txt">
+        <p>提示</p>
+        <p style="margin-top: 0.25rem">点击锦囊即可查看活动规则、排行榜、奖品等信息。</p>
+    </div>
+</div>-->
+
+<div id="awardUserInfoBg" class="hide" style="position:fixed; top:0; left: 0; bottom: 0; right: 0;overflow:hidden;"></div>
+<div id="hostInfoBg" class="hide" style="position:fixed; top:0; left: 0; bottom: 0; right: 0;overflow:hidden;z-index:9999;"></div>
+<div id="validteBoxerBg" class="hide" style="position:fixed; top:0; left: 0; bottom: 0; right: 0;overflow: hidden;"></div>
+
+<div id="awardDetailBox" class="poupMain bg hide isAngular">
+    <div id="forJZCouponBg" class="awardDetailPoup">
+        <div class="tipsBox">
+            <div class="contain">建站商城优惠券无奖品详情页<br><a href="javascript:;" onclick="window.open('http://hd.fkw.com/news/11181')">了解更多</a></div>
+        </div>
+    </div>
+    <div id="partnerGiftPoup" class="awardDetailPoup">
+        <div class="tipsBox">
+            <div class="contain">当前暂无奖品详情页展示</div>
+        </div>
+    </div>
+    <div id="awardDetailScrollBox">
+        <div id="awardDeailBg" class="bgfix hide"></div>
+        <div class="awardCloseIcon" onclick="hg.fire('scrollEvent',true);"></div>
+        <div class="awardWrap">
+            <div class="awardDetail">
+                <div class="hostName"></div>
+                <div class="awardName"></div>
+                <div class="awardSubTitle"></div>
+                <div class="awardCodeTime codeTimeFixedRange"><em>使用期限</em>：<span class="codeBgTime"></span> 至<br> <span class="codeEndTime"></span></div>
+                <div class="codeTimeFixedTerm hide">中奖后<span class="codeBgTime"></span>天生效，有效天数<span class="codeEndTime"></span>天</div>
+                <div id="awardCollectionBtn" class="flexBox justify-center align-center" onclick="HdGame.logDog(1000045, 2);HdGame.favorite();"><span class="icon-shoucang"></span>收藏优惠券</div>
+                
+            </div>
+            <div class="codeImgBox">
+                <div id="codeStatusBox" class="hide" style="padding-top:0.65rem;color:#898989">
+                    <div id="codeStatusBtn"></div>
+                    <div id="codeStatusInfo">商家已将该兑奖码设置为作废<br>详情请联系商家</div>
+                    <div id="codeStatusTips" class="hide"><em style="font-style: normal;">请先<span class="giftNameA">兑奖券</span>，<span class="targetDateMin">1天后</span>可用</em></div>
+                </div>
+                <div class="codeDetailInfoBox">
+                    <img class="codeImg"/>
+                    <div class='codeLine'><span id="codeName">优惠码</span>：<span class="code selectText"></span><span class="copy"><span class="iconCopy"></span>复制</span></div>
+                </div>
+                <div id="bottomCusBtnBox">
+                    <a id="seeFsnDetail" href="javascript:;" style="text-decoration:none;display:none;"><div class="bottomCusBtn cusBtn" style="border-top:none;"><span class="text">查看裂变情况</span></div></a>
+                    <a id="bottomCusBtnInfo" href="javascript:;" style="text-decoration:none;"><div class="bottomCusBtn cusBtn" style="border-top:none;"><span class="text">立即兑奖</span></div></a>
+                    <!--<a id="WxCusBtnInfo" href="javascript:;" style="text-decoration:none;" class="hide"><div class="awardCusBtn cusBtn" style="border-top:none;"><span class="text">自定义按钮（未开启）</span><span class="textDef hide">自定义按钮（未开启）</span><div class="cell__ft"></div></div></a>-->
+                    <!--<a id="WxCusBtnInfo" href="javascript:;" style="text-decoration:none;"><div class="cusBtn" style="border-top:none;"><span class="text">领取微信卡券</span><div class="cell__ft"></div></div></a>-->
+                </div>
+                <div class="codeDetailInfoBox">
+                    <div class="codeOptInfo"></div>
+                    <div class="codeOptInfo_Gift"></div>
+                    <div class="redPacketTip hide"></div>
+                </div>
+            </div>
+            <div class="awardBtnList">
+                <div class="splitLine" style="height:0.40rem;"></div>
+                <div class="awardBtnWrap">
+                
+                <!--兑奖券详情弹出层 -->
+                <div id="ticketDetailBox">
+                    <p class="ticketitle"><span class="text">兑奖券详情</span></p>
+                    <div class="ticketInfo">
+                        <div class="itemList dateLine codeTimeFixedRange">
+                            <div class="title">兑奖期限</div>
+                            <div class="box">
+                                <span class="beginTime">2016.03.03</span>至<span class="endTime">2017.03.03</span>
+                            </div>
+                        </div>
+                        <div class="itemList dateLine codeTimeFixedTerm hide">
+                            <div class="title">兑奖期限</div>
+                            <div class="box">
+                                中奖后<span class="codeBgTime"></span>天生效，有效天数<span class="codeEndTime"></span>天
+                            </div>
+                        </div>
+                        <div class="itemList timelimitLine">
+                            <div class="title">可用时段</div>
+                            <div class="box">
+                                <div class="timelimit">周一至周日</div>
+                            </div>
+                        </div>
+                        <div class="itemList addressLine">
+                            <div class="title titleAdress">兑奖地址</div>
+                            <div class="box">
+                                <div class="address">地址</div>
+                            </div>
+                            <div class="guideMap"></div>
+                        </div>
+                        <div class="itemList noticeLine">
+                            <div class="title titleNotice">兑奖须知</div>
+                            <div class="box">
+                                <div class="notice"><pre style="word-wrap: break-word;"></pre></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form action=""></form>
+                <div id="useStoreBox" class="initHide">
+                    <div class="splitLine2" style="height:0.40rem;"></div>
+                    <div class="storeTitle">
+                        <span class="text">适用门店</span><span class="storeNumText">（<span id="storeNum">5</span>个）</span>
+                        <span class="moreBtn cell__ft display_flex align-center">查看全部</span>
+                    </div>
+                    <div class="storeInfoBox">
+                        <div class="locationBtn" onclick="HdGame.openStoreLocation(this)"></div>
+                        <div class="info">
+                            <div class="storeNameBox"><span id="storeName" class="ellipsis"></span><span id="distance"></span></div>
+                            <div class="storeAdress"></div>
+                        </div>
+                    </div>
+                </div>
+                <a style="text-decoration:none;"><div class="servicePhone awardDetailBtn splitBtn"><span class="text">客服电话</span><span class="phoneIcon"></span><span class="phoneText"></span></div></a>
+                <!--20180809版本划分新旧活动-->
+                
+                    <a id="hostInfoDetail" style="text-decoration:none;"><div class="jumptoHostInfo awardDetailBtn splitBtn"><span class="text">主办单位介绍</span><div class="cell__ft"></div></div></a>
+                
+                <a id="awardCusBtnInfo" href="javascript:;" style="text-decoration:none;"><div class="awardCusBtn awardDetailBtn weui-cell__bd splitBtn" style="border-top:none;"><span class="text">自定义按钮（未开启）</span><span class="textDef hide">自定义按钮（未开启）</span><div class="cell__ft"></div></div></a>
+                </div>
+                
+                <div class="complainBox"><span class="complainBtn" ontouchend="HdGame.changePoup(5,'',true);HdGame.logDog(1000342,2)">投诉</span></div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="hide homePoupMask codeCopyDetailMask">
+        <div class="codeCopyDetailPoup">
+            长按以下文字复制券码<br>
+            <div class="copyCode selectText"></div>
+        </div>
+    </div>
+    <div class="hide bgfix codeDetailImgBox">
+        <div class="absCenter imgBox">
+            <img class="codeImg" style="width:9rem;height:9rem;"/>
+        </div>
+    </div>
+</div>
+<div id="storeListBox" class="bg hide">
+    <div class="storeListWrap">
+        <div class="closeBtn flexBox align-center"><span class="iconBack"></span>返回</div>
+        <div class="list"></div>
+        <div class="refreshBtn hide">更新当前位置</div>
+    </div>
+</div>
+
+
+
+
+<div id="informBox" class="bg hide">
+    <div id="inform-reason-page">
+        <div id="inform-reason-box">
+          <div class="inform-box-title">投诉原因<span>*</span></div>
+          <div class="inform-reason-wrap">
+            
+                <label class="reasonItem" for="1" _index=" 0" >
+                    <div class="weui-cell__bd">
+                        <p> 诱导分享 </p>
+                    </div>
+                    
+                    
+                </label>
+            
+                <label class="reasonItem" for="2" _index=" 1" >
+                    <div class="weui-cell__bd">
+                        <p> 虚假活动 </p>
+                    </div>
+                    
+                    
+                </label>
+            
+                <label class="reasonItem" for="3" _index=" 2" >
+                    <div class="weui-cell__bd">
+                        <p> 政治敏感 </p>
+                    </div>
+                    
+                    
+                </label>
+            
+                <label class="reasonItem" for="4" _index=" 3" >
+                    <div class="weui-cell__bd">
+                        <p> 色情低俗 </p>
+                    </div>
+                    
+                    
+                </label>
+            
+                <label class="reasonItem" for="5" _index=" 4" >
+                    <div class="weui-cell__bd">
+                        <p> 谣言 </p>
+                    </div>
+                    
+                    
+                </label>
+            
+                <label class="reasonItem" for="6" _index=" 5" >
+                    <div class="weui-cell__bd">
+                        <p> 其他 </p>
+                    </div>
+                    
+                    
+                </label>
+            
+          </div>
+        </div>
+    </div>
+    <div id="inform-desc-page">
+        <div class="inform-desc-title">
+            <div class="inform-box-title">投诉描述<span>*</span></div>
+            <div class="weui-textarea-counter" id="informDesc-counter"><span>0</span>/100</div>
+        </div>
+        <div>
+            <div id="inform-desc-box">
+                <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" id="informDesc" placeholder="请描述具体的投诉原因" rows="4"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="submit-inform-btn" class="weui-btn weui-btn_primary informBox-btn-comm disable">提交</div>
+    <div id="cancel-inform-btn" ontouchend="hg.fire('scrollEvent',true);">取消</div>
+    
+    
+</div>
+<div id="informResultBox" class="bg hide weui">
+    <div id="informResult" class="weui-msg">
+        <div class="informResult-logo"></div>
+        <div class="weui-msg__text-area">
+            <h2 class="weui-msg__title">投诉成功</h2>
+            <p class="weui-msg__desc">感谢你的参与，我们坚决反对色情、暴力、欺诈等违规信息，我们会认真处理你的投诉，维护绿色、健康的网络环境</p>
+        </div>
+        <div class="weui-msg__opr-area" ontouchend="hg.fire('scrollEvent',true);">
+            <p class="weui-btn-area">
+                <a class="confirm-btn weui-btn weui-btn_primary informBox-btn-comm">确定</a>
+            </p>
+        </div>
+        <div class="weui-msg__extra-area">
+            <div class="weui-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+	<div class="homeBtnBox specialBottom " >
+	    
+	    
+            <div id="myAwardBtn" onclick="HdGame.changePoup(3,'',true)" style="display:none;"><span class='redDot'></span></div>
+            
+              
+	    
+	</div>
+
+
+    <div id="logoImgBox" class="logoImgBox imgContainer absCenter hide" style="">
+        <img id="logoImg" class="slaveImg abs" webp_src="//hdg.faisys.com/image/logo.jpg" style="width:2rem;height:2rem;top:3.5rem;left:0.75rem;"/>
+    </div>
+
+
+  
+<div id="lots-wait-Box" style="display:none">
+    <div id="lots-wait-img" class="editRelate-lotsPot"></div>
+    <div id="lots-wait-hint">当前抽奖人数过多<br/>请稍等 <span id="lots-wait-hint-num">0</span> 秒</div>
+</div>
+<div id="helpGuideBox" style="display:none">
+    
+        
+            <p>你今天已经没有抽奖机会了</br>分享给好友或群聊</p>
+            <p style="margin-top:1.1rem;">
+                今天将额外获得1次抽奖机会！<br/>（仅限当天首次分享）
+            </p>
+        
+    
+</div>
+
+<div id="themeGameCodeImgBox" class="hide">
+	<img id="themeGameCodeImg" _src="data:image/png;base64,XdmFyIGc9IjQsZiw3LGgsMTIsdywyMix2LDI3LHIsMzEsaiIuc3BsaXQoIiwiKSxmPWdfY29uZmlnLnBUb2tlbixjPWhnLmFzc2V0cy5pbmNyZW1lbnQsaj1mdW5jdGlvbihoKXtoPSQubWQ1KGgrZikuc3BsaXQoIiIpO2Zvcih2YXIgYj0wLGs9Zy5sZW5ndGg7YjxrO2IrPTIpe2guc3BsaWNlKHBhcnNlSW50KGdbYl0pK3BhcnNlSW50KGIvMiksMCxnW2IrMV0pfXJldHVybiAkLm1kNShoLmpvaW4oIiIpKX0sZD1mdW5jdGlvbihsLGgpe2Z1bmN0aW9uIGsoYil7cmV0dXJuIGJ9dmFyIG49bC1oLG09aGcudGltZTtpZihnX2NvbmZpZy5zY29yZVR5cGUmJmwhPW0uaW5pdFRpbWUpe3ZhciBvPW0uaXNEZXNjPy0xOjE7aWYoKG0ucmFuZ2VbMF0+MCYmbypuPG0ucmFuZ2VbMF0vMjAwMCl8fChtLnJhbmdlWzFdPjAmJm8qbj5tLnJhbmdlWzFdLzUwMCkpe3JldHVybiBrKCEwKX19ZWxzZXtpZihsIT0wJiZjJiZuPmMqMil7cmV0dXJuIGsoITApfX1yZXR1cm4gayghMSl9LGUsaSxhPWZ1bmN0aW9uKGIpe2lmKGQoYixhLnQpKXtyZXR1cm59Z19jb25maWcuYXdhcmRJbmZvQj1qKGIpO2EudD1ifTthLnQ9MDtnX2NvbmZpZy5zY29yZVR5cGU/KGU9aGcudGltZSxpPSJzZXRUaW1lIik6KGU9aGcuZ3JhZGUsaT0ic2V0R3JhZGUiKSxlJiZlLm9uPyhlLm9uKGksYSksYSgwKSk6YSgiY2xtMTIzIik=" >
+</div>
+
+
+<div class="resuleBox hide">
+    <div id="resule-status-box" style="display:none">
+        
+        <div id="resule-status-scrollWrap">
+            <div class="resule-bgLight"></div>
+            <div id="resule-status-bird"></div>
+            <div class="optContainer" style="height: 18.6rem; overflow-y:auto;">
+	            <div id="resule-status-head">
+	                <div class="resule-status-userImg">
+	                    <img src="http://thirdwx.qlogo.cn/mmopen/vi_32/Ru3iaBuiacR7Z0Micm3qR3se3FvHIaun7hfiaibCYudfnxFoHbYk51b4x771M0bmibG2iaiaq3Zay8Y29JNiazdEaTWDq4Q/132"/>
+	                </div>
+	                <div id="resule-status-ribbon" class="resule-status-ribbon"></div>
+	            </div>
+	            <div id="resule-status-body">
+	                
+	                <p class="youraward yourScore">您的成绩为：<span class="resuleArg" style="font-size:1rem;font-weight: bold;"></span><span class="result-scoreUnit"  style="font-size:1rem;"><span class="gameScoreUnit">分</span></span></p>
+                    <p class="youraward costTime hide">达到该成绩用时：<span class="resuleArg"></span><span class="result-scoreUnit">秒</span></p>
+	                <p class="youraward special hide">通关并且</p>
+	                <p class="beat-Percent hide comm-status">成功击败全国<span></span>%的玩家</p>
+	                <p class="resule-status-minscore comm-status" style="display:none;">成绩必须达到 <span class="resuleArg resulescoreLimit"></span> <span class="gameScoreUnit">分</span>才能<span id="minscoreDrawFont">抽奖</span></p>
+	                
+                    <div class="resultArg-wrap display_flex">
+	                <p id="bestArg">最佳成绩<br><span class="resuleArg"></span><span class="result-scoreUnit"><span class="gameScoreUnit">分</span></span></p>
+                    <p id="bestCostTime" style="display: none" >最佳用时<br><span class="resuleArg"></span><span class="result-scoreUnit">秒</span></p>
+	                <p id="bestRank">最佳排名<br><span class="result-scoreUnit2">NO.</span><span class="resuleArg"></span></p>
+                    </div>
+	                
+	                <div id="rank_showRule" style="text-decoration:underline;margin:0.7rem 0rem;" class="hide" onclick="showRule();">活动规则</div>
+	                
+                        <div id="resule-status-count" class="display_flex" style="margin-top:0.6rem">
+	                        <p class="totalDraw">您还有 <span id="totalDrawCount" class="resuleArg"></span> 次抽奖机会</p>
+	                        <p class="dayDraw">今天还有 <span class="resuleArg dayDrawCount"></span> 次机会抽奖</p>
+	                        <p class="dayDraw4Total hide">今天可抽次数：<span class="resuleArg dayDrawCount"></span> 次</p>
+	                    </div>
+                    
+	                <div id="resule-status-playinfo" style="margin-top:0.6rem">
+	                    <p class="dayPlayHint">今天还有 <span class="resuleArg todayPlayCount"></span> 次参与机会</p>
+	                    <p class="totalPlayHint">您还有 <span class="resuleArg totalPlayCount"></span> 次参与机会</p>
+	                    <p class="dayPlayHint4Total">今天可参与 <span class="resuleArg todayPlayCount"></span> 次</p>
+	                </div>
+                    <div id="resule-sucReg" class="hide" style="margin-top:0.6rem">您已经成功报名参与活动！</div>
+	            </div>
+	            <div id="resule-status-other" class="hide">
+	                <p style="font-size:0.8rem;font-weight:bold;">通关并且</p>
+	                <p class="resule-status-minscore hide" style="margin: 10px 0px 10px;">成绩必须达到 <span class="resuleArg resuleArg-fail resulescoreLimit"></span> <span class="gameScoreUnit">分</span>才能抽奖</p>
+	            </div>
+	            
+	            <div class="resule-foot-box">
+	                <div class="resule-foot-one">
+	                    <div class="resule-button resule-one-button resule-status-gift hide">赶紧去抽奖</div>
+	                    <div class="resule-button resule-one-button resule-status-reg hide">我要报名</div>
+	                    <div class="resule-button resule-one-button resule-status-again hide">再玩一次</div>
+	                    <div class="resule-button resule-one-button resule-status-send hide">领取礼品</div>
+	                    <div class="resule-button resule-one-button resule-status-rightNow hide">马上PK</div>
+	                </div>
+	                <div class="resule-foot-two">
+	                
+                        <div id="resule_seeRank_show" class="resule-button resule-status-seeRank"><span id="seeRank_show_rankText"  class="">排行榜</span></div><div class="resule-button resule-status-home">返回首页</div><div class="resule-button resule-status-again restart-again ">再玩一次</div>
+	                
+	                </div>
+	            </div>
+            </div>
+	    <div class='attentionBox'>
+		    <div id="drawMenuBtnBox" class='menuBtnBox hide' >
+			    <a class='menuName'>关注我们</a>
+		    </div>
+		    <div class='hdskillInfo skillInfo theRunningAdClass'><a class="theSpecialTarget" href='http://mp.weixin.qq.com/s?__biz=MjM5MTk5MjI3OA==&#x26;mid=209854000&#x26;idx=1&#x26;sn=82241d924839270d3ea820ad2d56c01b#rd'>我也要创建春节活动</a><span class='gotoFlag'><i></i></span></div> 
+		    <div class="holdBox"></div>
+	    </div>
+        </div>
+        
+        <div id="resule-status-lotsBox" style="display:none">
+            
+                <div id="lucyClick-wrap" class="">
+                    <img id="resule-status-lucyClick" class="editTarget-openBoxNew">
+                    
+                        <img class="editTarget-showBoxNew showBox hide">
+                    
+                </div>
+                <div id="drawPrize-wrap" class="hide">
+                    <div id="drawAreaBox" class="drawAreaBox">
+                        <div id="guawoBg" class="editTarget-model_guawoBg guawoBg" width="100%" height="100%"></div>
+                        <div id="drawArea" class="editTarget-model_guawo guawo">
+
+                            <div id="awardResultList" class="awardResultList">
+                                
+                                    <div class="awardBgItem editTarget-model_award1 hide" width="100%" height="100%"></div>
+                                
+                                    <div class="awardBgItem editTarget-model_award2 hide" width="100%" height="100%"></div>
+                                
+                                    <div class="awardBgItem editTarget-model_award3 hide" width="100%" height="100%"></div>
+                                
+                                <div class="awardBgItem editTarget-model_award0 hide" width="100%" height="100%"></div>
+                            </div>
+                            
+                            <img class="localStoryAage" src="//hdg.faisys.com/image/ygqj/handTips.png">
+                            <canvas id="myCanvas"></canvas>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="lukyWheel-wrap" class="hide">
+                    <div id="outercont">
+                        <div id="outer-cont" class="editTarget-model_wrapNew">
+                            
+                            <canvas id="outer"></canvas>
+                            
+                        </div>
+                        <div id="inner" class='startBtnImg editTarget-model_startBtn'>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="yaoyiyao-wrap" class="hide">
+                    <div id="startBtn" class="editTarget-model_shakeHandsBox">
+                        <img id="shake" class="model_tada editTarget-model_shakeHands">
+                        <img class="attendFlag editTarget-model_shakeFlag">
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+    <div id="resule-gift-box" style="display:none">
+        <div id="resule-gift-scrollWrap" class="resule-gift-overflowScrolling" style="padding-top:1.2rem;position:relative;z-index:300;">
+        	
+            <div class="resule-bgLight"></div>
+            <div id="luckContainer" style="position:absolute; width: 100%;z-index:250;">
+                
+            
+                <div class="imgContentLimit hide" style="width: 14rem; height: 30rem; position: absolute;"></div>
+	            <div class="imgContainer xydzp_GiftPos" style="position:relative;">
+                    <img id="resule-gift-sucImg" class="slaveImg">
+                    
+                    
+                </div>
+                
+                	<div id="resule-gift-foot" style="margin-top:-0.7rem;">
+	                    <p id="resule-gift-rank"> <span class="rank gifArg awardStyle"></span> </p>
+	                    <p id="resule-gift-goods"> <span class="goods gifArg awardName"></span> </p>
+	                </div>
+		            
+                
+
+                
+                <div id="resule-gift-buttonMenu">
+                	
+	                	<div class="giftBtnBox lookDetail orangeBtn">
+	                    	<a class="seeAwardDetail buttonContent">查看奖品详情</a>
+	                    </div>
+                        
+                        <div class='resule-gift-draw repeatDraw flowBtn ' data-awarded='true'>继续抽奖</div>
+                        <div class='resule-gift-home menuBack menuBack2 greenBtn flowBtn'>返回首页</div>
+	                
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+    
+    <div id="faiImgBox">
+        <div class="cannotGetThePriceBox"></div>
+        
+            
+                
+                    <img class="abs editTarget-theGetPricePic theUnPriceImg imgPreventDefault" id="theGetPricePic" />
+                
+                
+                <div class="cannotGetThePriceDecs">很遗憾！与奖品擦肩而过！</div>
+            
+        
+        
+        
+                <div class='resule-gift-draw repeatDraw '>继续抽奖</div>
+                <div class='resule-gift-home menuBack menuBack2'>返回首页</div>
+            
+        
+    </div>
+    
+    <div id="resule-gift-buttonMenu-bottom">
+        
+        	<div class="giftBtnBox lookDetail orangeBtn">
+                <a class="seeAwardDetail buttonContent">查看奖品详情</a>
+            </div>
+            
+            <div class="bottom-line">
+            <div class='resule-gift-draw repeatDraw greenBtn flowBtn ' data-awarded='true'>继续抽奖</div>
+            <div class='resule-gift-home menuBack menuBack2 greenBtn flowBtn'>返回首页</div>
+            </div>
+        
+        
+        
+    </div>
+    
+        <div class='attentionBox'>
+        
+        	
+        	<div class='menuBtnBox btnB faiMenuBtn' style='margin-bottom:4rem;'>
+        	
+              <a class='menuName'>关注我们</a>
+            </div>
+            <div class='hdskillInfo skillInfo theRunningAdClass'><a class="theSpecialTarget" href='http://mp.weixin.qq.com/s?__biz=MjM5MTk5MjI3OA==&#x26;mid=209854000&#x26;idx=1&#x26;sn=82241d924839270d3ea820ad2d56c01b#rd'>我也要创建春节活动</a><span class='gotoFlag'><i></i></span></div> 
+            <div class="holdBox"></div>
+        </div>
+    </div>
+</div>
+
+
+<div id="attentionMask" class="homePoupMask">
+    
+    <div id="attentionPoup" class="homePoupInner attentionPoup">
+        <canvas id="QRImg_canvas1" class="QRImg_canvas"></canvas>
+        <img class="QRImg_exportImg" class="hide" src style="position: absolute; top: 0.5rem; z-index: 10;border-radius: 0.75rem;"/>
+    </div>
+    
+</div>
+
+<div id="awardCodeLayer" class="homePoupMask hide">
+    <div id="awardCodeDetail" style="border-radius: 0.2rem;">
+        <div class='codeLine' style="margin-top:0.4rem;">请联系核销员扫码核销</div>
+        <img class="codeImg"/>
+        <div class='codeLine' style="padding-top: 0.8rem;"><span class="code selectText"></span></div>
+        <div class="codeOptInfo"></div>
+    </div>
+</div>
+<div id="newAttentionMask" class="homePoupMask hide">
+    
+    <div id="newAttentionPoup" class="homePoupInner attentionPoup">
+        <canvas id="QRImg_canvas2" class="QRImg_canvas"></canvas>
+        <img class="QRImg_exportImg" class="hide" src style="position: absolute; top: 0.5rem; z-index: 10; border-radius: 0.75rem;"/>
+    </div>
+    
+</div>
+<div id="plAttentionMask" class="homePoupMask hide">
+    
+    <div id="plAttentionPoup" class="homePoupInner attentionPoup">
+        <canvas id="QRImg_canvas3" class="QRImg_canvas"></canvas>
+        <img class="QRImg_exportImg" class="hide" src style="position: absolute; top: 0.5rem; z-index: 10; border-radius: 0.75rem;"/>
+    </div>
+    
+</div>
+
+    <div id="skillSupMask" class="homePoupMask">
+        <img class="hdSkill hide" src="//hdg.faisys.com/image/hdQRcode/20170821/caewmB_1New.png?v=201711211453" style="position:absolute;top:0;bottom:0;z-index:10;margin:auto;left:0;right:0;width:11.65rem"/>
+        
+    </div>
+
+
+
+<div id="loadingToast" class="hide">
+    <div class="weui-mask_transparent"></div>
+    <div class="weui-toast">
+        <i class="weui-loading weui-icon_toast"></i>
+        <p class="weui-toast__content"></p>
+    </div>
+</div>
+
+
+<div id="myFissionPage" class="fissionPage">
+    <div class="closeBtn"></div>
+    <div class="fissionBg editTarget-fissionDetailBg">
+        <div class="fissionProgress">
+            <div class="txt_fsp">
+                <div class="tit_txt">
+                    <div class="notFinish">— 当前已增值 —</div>
+                    <div class="hasFinish">恭喜完成了所有裂变挑战</div>
+                </div>
+                <div class="pgs_txt">
+                    <div class="notFinish"><span class="curVal">0</span><span class="txt">/<span class="maxVal"></span></span></div>
+                    <div class="hasFinish">增值为<span class="txt"><span class="totalVal"></span></span></div>
+                </div>
+            </div>
+            <div class="cont_fsp"><div class="fill_fsp"></div></div>
+            <div class="bot_fsp">
+                <div class="notStart">还未开始裂变</div>
+                <div class="start left">已裂变<span class="num"></span>次</div>
+                <div class="start right">面值增加了<span class="curVal"></span></div>
+            </div>
+        </div>
+        <div class="func_fsn">
+            <div class="txt_fsn">
+                <div class="inviteTxt_fsn">邀请够 <span class="times"></span> 人，此券可增值到 <span class="maxFsnName"></span></div>
+                <div class="detail_fsn">获得一张可裂变的<span class="fsnName"></span>，立即与好友分享吧！<br/>邀请成功同时自己获得等额增值金额</div>
+            </div>
+            <div class="btnCont_fsn">
+                <div class="invBtnFsn btn editTarget-fissionInviteBtn"></div>
+                <div class="invBtnFsnTxt btn">点击右上角邀请好友</div>
+                <div class="seeCurAwaFsn btn editTarget-fissionCheckBtn"></div>
+            </div>
+            <div class="friendList_fsn">
+                <div class="title">
+                    <span class="line"></span><span class="cir"></span><span class="txt">邀请好友</span><span class="cir"></span><span class="line"></span>
+                </div>
+                <div class="subTit">共有<span class="num"></span>名好友帮忙裂变</div>
+                <div class="list"></div>
+                <div class="weui-loadmore">
+                    <div class="onLoad">
+                        <i class="weui-loading"></i>
+                        <span class="weui-loadmore__tips">加载中</span>
+                    </div>
+                    <div class="loadEnd">————<span class="txt">没有更多了</span>————</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="shareFissionPage" class="fissionPage">
+    <div class="closeBtn"></div>
+    <div class="fissionBg editTarget-fissionShareBg">
+        <div class="shareFissionTxt editTarget-fissionShareTxt"><span class="txt_tit"><span class="name">南笙</span>送给你一张</span></div>
+        <div class="shareFissionName editTarget-fissionShareName">优惠券</div>
+        <img class="shareFissionBtn editTarget-fissionShareBtn" />
+    </div>
+</div>
+
+
+    </div>
+<script type="text/javascript">
+    var game_assets = {
+        jumpUp : 'http://7020498.h40.faiusr.com/4/158/ACgIABAEGAAg0Ja6xQUo2pPW9gcwlgE4_gE.png',
+        jumpDown : 'http://7020498.h40.faiusr.com/4/158/ACgIABAEGAAg1Za6xQUoltPsogQwlgE4_gE.png',
+        cloud : 'http://7020498.h40.faiusr.com/4/158/ACgIABAEGAAgyr-owgUolNPFgAcw1AE4Sw.png',
+        protect1 : '//hdg.faisys.com/image/protect_1.png',
+        protect2 : '//hdg.faisys.com/image/protect_2.png?v=201710231622'
+    };
+    function loadGamePreAssets(){
+        hg.assets.add(HdGame.getWebpOrOtherImg(game_assets));
+    }
+</script>
+
+<script type="text/javascript">
+    var _manage = false,
+        tryPlay = false,
+        m_debug = false,
+        _resRoot = '//hdg.faisys.com',
+		//_resRoot = '//hdg.faisys.com',
+        _ruleInfo = {},
+        m_isPre = false,
+        _preview = false,
+        _showUnPublishPage = false,
+        _fromCardBag = false, // 从券宝webview进来
+        _fromCbGameOrigin = "null", // 来源：券宝小程序 'findAct'-发现活动列表, 'friend'-朋友分享
+        _qbAid = 0, // 来源：券宝小程序 aid
+        _isTargetUser = false, // 来源：券宝小程序 是否是未创建未参与活动的B类用户
+        _isFinishJoinGame = false, // 来源：券宝小程序 是否参与过游戏
+        isPublish = true,
+        isOldAwardPage = false,
+        _isShowWinnersList = 0,
+        hg = {};
+
+    //全局变量
+    var g_config = {"isAngular":true,"_preview":false,"_minapp_preview":"","_minapp_findAct":false,"playerOrigin":3,"testCMD":"","ajaxUrl":"//7020498-158.hd.faisco.cn/ajax/","isOem":false,"isZhuliGame":false,"isOldZhuliGame":false,"isShoppingGame":false,"isPaymentGame":false,"isSingleAward":false,"isDoubleGame":false,"scoreType":false,"countsTimeType":0,"sortType":0,"settintCtWx":"","settintCtQq":"","settintCtPhone":"","showSkillSup":true,"showSlide":false,"isOpenAreaLimit":false,"isCheckPlayTimes":true,"showMenu":true,"buy":false,"isReg":false,"isNewGame":false,"isModel":false,"test":false,"isNestedSubGame":false,"showLogo":false,"isShowNoAwardTips":false,"isopenVCode":false,"flag":1082009732,"flagB":2304,"drawLimitDef":100,"explainInfo":"{\"type\":1,\"top\":\"通过重力感应控制角色向上跳。第五层之前掉落不会死亡。\\n\"}","scoreSet":100,"style":15,"aid":7020498,"gameId":158,"openId":"oosnVwuzoyEHE2a8ztSyhSbR3U60","playerId":0,"userName":"J0N","headImg":"http://thirdwx.qlogo.cn/mmopen/vi_32/Ru3iaBuiacR7Z0Micm3qR3se3FvHIaun7hfiaibCYudfnxFoHbYk51b4x771M0bmibG2iaiaq3Zay8Y29JNiazdEaTWDq4Q/132","pToken":"3W4mfD340m934D72cTdwfzMkZmN0UzM","authVer":2,"realVer":2,"hostLink":"http://","scoreUnit":"分","startTime":"2016-12-21 14:19","$startTime":1482301140000,"$endTime":1482905940000,"setGameTimeInterval":10,"awardList":[{"amount":0,"awardtype":2,"cashtype":2,"attention":1,"cashsite":"请填写您的兑奖地址或者门店地址","pot":0,"style":"一等奖","t_type":"DATE_TYPE_FIX_TIME_RANGE","cbt":1482249600000,"cet":1482940799000,"cft":30,"cfbt":0,"tlmt":"[8]","ocimg":false,"opqrc":true,"optx":false,"oct":false,"oplink":false,"genewxcard":false,"iscuscode":false,"iscancelver":false,"stl":"","opti":"凭券联系现场工作人员兑奖","txn":"兑奖须知","txc":"联系商家出示兑奖码","btn":"了解更多","btl":"","servicepho":"","cashinfo":"","aimg":"//hdg.faisys.com/image/gift.png?v=201601141500","aimgw":"6rem","aimgh":"6rem","attentionimg":"","onlinect":1,"continfo":3,"excelName":"","hbtype":0,"hbAverage":1000,"floatBegin":500,"floatEnd":1500,"name":"价值100元礼品","level":1,"passwordrednum":100,"payment":1,"usedAmount":0,"onlinewxnum":"","storeType":1,"offset":0},{"amount":0,"awardtype":2,"cashtype":2,"attention":1,"cashsite":"请填写您的兑奖地址或者门店地址","pot":0,"style":"二等奖","t_type":"DATE_TYPE_FIX_TIME_RANGE","cbt":1482249600000,"cet":1482940799000,"cft":30,"cfbt":0,"tlmt":"[8]","ocimg":false,"opqrc":true,"optx":false,"oct":false,"oplink":false,"genewxcard":false,"iscuscode":false,"iscancelver":false,"stl":"","opti":"凭券联系现场工作人员兑奖","txn":"兑奖须知","txc":"联系商家出示兑奖码","btn":"了解更多","btl":"","servicepho":"","cashinfo":"","aimg":"//hdg.faisys.com/image/gift.png?v=201601141500","aimgw":"6rem","aimgh":"6rem","attentionimg":"","onlinect":1,"continfo":3,"excelName":"","hbtype":0,"hbAverage":1000,"floatBegin":500,"floatEnd":1500,"name":"价值50元礼品","level":2,"passwordrednum":100,"payment":1,"usedAmount":0,"onlinewxnum":"","storeType":1,"offset":0},{"amount":0,"awardtype":2,"cashtype":2,"attention":1,"cashsite":"请填写您的兑奖地址或者门店地址","pot":0,"style":"三等奖","t_type":"DATE_TYPE_FIX_TIME_RANGE","cbt":1482249600000,"cet":1482940799000,"cft":30,"cfbt":0,"tlmt":"[8]","ocimg":false,"opqrc":true,"optx":false,"oct":false,"oplink":false,"genewxcard":false,"iscuscode":false,"iscancelver":false,"stl":"","opti":"凭券联系现场工作人员兑奖","txn":"兑奖须知","txc":"联系商家出示兑奖码","btn":"了解更多","btl":"","servicepho":"","cashinfo":"","aimg":"//hdg.faisys.com/image/gift.png?v=201601141500","aimgw":"6rem","aimgh":"6rem","attentionimg":"","onlinect":1,"continfo":3,"excelName":"","hbtype":0,"hbAverage":1000,"floatBegin":500,"floatEnd":1500,"name":"价值10元礼品","level":3,"passwordrednum":100,"payment":1,"usedAmount":0,"onlinewxnum":"","storeType":1,"offset":0},{"amount":0,"awardtype":2,"cashtype":2,"attention":1,"cashsite":"请填写您的兑奖地址或者门店地址","pot":0,"style":"四等奖","t_type":"DATE_TYPE_FIX_TIME_RANGE","cbt":1482249600000,"cet":1482940799000,"cft":30,"cfbt":0,"tlmt":"[8]","ocimg":false,"opqrc":true,"optx":false,"oct":false,"oplink":false,"genewxcard":false,"iscuscode":false,"iscancelver":false,"stl":"","opti":"凭券联系现场工作人员兑奖","txn":"兑奖须知","txc":"联系商家出示兑奖码","btn":"了解更多","btl":"","servicepho":"","cashinfo":"","aimg":"//hdg.faisys.com/image/gift.png?v=201601141500","aimgw":"6rem","aimgh":"6rem","attentionimg":"//hd.faisys.com/image/qrcodeImg.jpg","onlinect":1,"continfo":0,"excelName":"","hbtype":0,"hbAverage":1000,"floatBegin":500,"floatEnd":1500,"name":"价值5元小礼品","level":4,"passwordrednum":100,"payment":1,"usedAmount":0,"wxcardid":"","storeType":1},{"amount":0,"awardtype":2,"cashtype":2,"attention":1,"cashsite":"请填写您的兑奖地址或者门店地址","pot":0,"style":"五等奖","t_type":"DATE_TYPE_FIX_TIME_RANGE","cbt":1482249600000,"cet":1482940799000,"cft":30,"cfbt":0,"tlmt":"[8]","ocimg":false,"opqrc":true,"optx":false,"oct":false,"oplink":false,"genewxcard":false,"iscuscode":false,"iscancelver":false,"stl":"","opti":"凭券联系现场工作人员兑奖","txn":"兑奖须知","txc":"联系商家出示兑奖码","btn":"了解更多","btl":"","servicepho":"","cashinfo":"","aimg":"//hdg.faisys.com/image/gift.png?v=201601141500","aimgw":"6rem","aimgh":"6rem","attentionimg":"//hd.faisys.com/image/qrcodeImg.jpg","onlinect":1,"continfo":0,"excelName":"","hbtype":0,"hbAverage":1000,"floatBegin":500,"floatEnd":1500,"name":"价值5元小礼品","level":5,"passwordrednum":100,"payment":1,"usedAmount":0,"wxcardid":"","storeType":1},{"amount":0,"awardtype":2,"cashtype":2,"attention":1,"cashsite":"请填写您的兑奖地址或者门店地址","pot":0,"style":"六等奖","t_type":"DATE_TYPE_FIX_TIME_RANGE","cbt":1482249600000,"cet":1482940799000,"cft":30,"cfbt":0,"tlmt":"[8]","ocimg":false,"opqrc":true,"optx":false,"oct":false,"oplink":false,"genewxcard":false,"iscuscode":false,"iscancelver":false,"stl":"","opti":"凭券联系现场工作人员兑奖","txn":"兑奖须知","txc":"联系商家出示兑奖码","btn":"了解更多","btl":"","servicepho":"","cashinfo":"","aimg":"//hdg.faisys.com/image/gift.png?v=201601141500","aimgw":"6rem","aimgh":"6rem","attentionimg":"//hd.faisys.com/image/qrcodeImg.jpg","onlinect":1,"continfo":0,"excelName":"","hbtype":0,"hbAverage":1000,"floatBegin":500,"floatEnd":1500,"name":"价值5元小礼品","level":6,"passwordrednum":100,"payment":1,"usedAmount":0,"wxcardid":"","storeType":1},{"amount":0,"awardtype":2,"cashtype":2,"attention":1,"cashsite":"请填写您的兑奖地址或者门店地址","pot":0,"style":"七等奖","t_type":"DATE_TYPE_FIX_TIME_RANGE","cbt":1482249600000,"cet":1482940799000,"cft":30,"cfbt":0,"tlmt":"[8]","ocimg":false,"opqrc":true,"optx":false,"oct":false,"oplink":false,"genewxcard":false,"iscuscode":false,"iscancelver":false,"stl":"","opti":"凭券联系现场工作人员兑奖","txn":"兑奖须知","txc":"联系商家出示兑奖码","btn":"了解更多","btl":"","servicepho":"","cashinfo":"","aimg":"//hdg.faisys.com/image/gift.png?v=201601141500","aimgw":"6rem","aimgh":"6rem","attentionimg":"//hd.faisys.com/image/qrcodeImg.jpg","onlinect":1,"continfo":0,"excelName":"","hbtype":0,"hbAverage":1000,"floatBegin":500,"floatEnd":1500,"name":"价值5元小礼品","level":7,"passwordrednum":100,"payment":1,"usedAmount":0,"wxcardid":"","storeType":1},{"amount":0,"awardtype":2,"cashtype":2,"attention":1,"cashsite":"请填写您的兑奖地址或者门店地址","pot":0,"style":"八等奖","t_type":"DATE_TYPE_FIX_TIME_RANGE","cbt":1482249600000,"cet":1482940799000,"cft":30,"cfbt":0,"tlmt":"[8]","ocimg":false,"opqrc":true,"optx":false,"oct":false,"oplink":false,"genewxcard":false,"iscuscode":false,"iscancelver":false,"stl":"","opti":"凭券联系现场工作人员兑奖","txn":"兑奖须知","txc":"联系商家出示兑奖码","btn":"了解更多","btl":"","servicepho":"","cashinfo":"","aimg":"//hdg.faisys.com/image/gift.png?v=201601141500","aimgw":"6rem","aimgh":"6rem","attentionimg":"//hd.faisys.com/image/qrcodeImg.jpg","onlinect":1,"continfo":0,"excelName":"","hbtype":0,"hbAverage":1000,"floatBegin":500,"floatEnd":1500,"name":"价值5元小礼品","level":8,"passwordrednum":100,"payment":1,"usedAmount":0,"wxcardid":"","storeType":1}],"comfort":{"comLimitNum":false,"ccc":"","comNum":0,"cc":"","comusedamount":0,"comModNum":0,"comoptx":false,"cas":"安慰奖","comtxc":"联系商家出示兑奖码","ca":"价值5元小礼品","comimgw":"6rem","comcashinfo":"","combtl":"","comfbt":0,"combtn":"了解更多","comiscuscode":false,"comimgh":"6rem","cttype":"DATE_TYPE_FIX_TIME_RANGE","comattention":1,"comiscancelver":false,"comimg":"//hdg.faisys.com/image/gift.png?v=201601141500","comcbt":1482249600000,"comcontinfo":0,"comservicephone":"","comcet":1482940799000,"conlinect":1,"ctlmt":"[8]","comattentionimg":"//hd.faisys.com/image/qrcodeImg.jpg","comOpqrc":true,"comcashsite":"请填写您的兑奖地址或者门店地址","comAwardtype":2,"comcashtype":2,"comopti":"凭券联系现场工作人员兑奖","comtxn":"兑奖须知","comft":30,"comoci":false,"comoct":false,"comstl":"","comOplink":false,"comStoreType":1},"bestRankInfo":{},"awardInfoB":"","openAwardLinkNoDraw":false,"userInfo":{},"fisUserInfo":{},"awardUsername":"","awardPhone":"","awardAddress":"","addressNum":"","status":0,"afterWxCard":true,"haveAward":false,"showHelpGuide":false,"ipInfo":{},"contactNoDraw":"[{\"name\":\"姓名\",\"key\":\"ausername\",\"isOpen\":true},{\"name\":\"联系电话\",\"key\":\"aphone\",\"isOpen\":true},{\"name\":\"联系地址\",\"key\":\"aadress\",\"isOpen\":false}]","isAOpenId":1,"linkInfoType":1,"afterLinkModify":true,"shareDeep":1,"isFromZhuliShare":false,"qrCodeUrl":"https://13232127.h40.faiusr.com/2/ACgIABACGAAg2pvV8AUosqb8ogEwkAM4kAM.jpg?wx_fmt=jpeg&wxfrom=5&wx_lazy=1","$$awardTypeInfo":{"def":{"collect":"收藏兑奖券","showcashtype":false,"showsitebox":true,"qrcode":false,"showcopy":true,"opti":"凭券联系现场工作人员兑奖","codename":"兑奖码","details":"兑奖券详情","deadline":"兑奖期限","showwxcard":true,"notice":"兑奖须知","cuscode":true,"cashsite":"请填写您的兑奖地址或者门店地址","sitetype":"text","site":"","term":true,"btn":"立即兑奖","isHdGift":false,"isJZcoupon":false,"isWxCash":true,"cashinfo":""},"0":{"collect":"收藏优惠券","opti":"到店后向店员出示","codename":"优惠码","details":"优惠券详情","deadline":"使用期限","notice":"使用须知","sitetype":"text","cashsite":"请填写您的门店地址","site":"门店地址"},"1":{"collect":"收藏优惠券","opti":"购物时凭优惠码联系客服兑奖","codename":"优惠码","details":"优惠券详情","deadline":"使用期限","notice":"使用须知","0":{"sitetype":"url","cashsite":"http://m.jd.com","site":"商城地址","btn":"进入商城"},"1":{"sitetype":"taopw","cashsite":"","site":"淘宝淘口令","btn":"复制淘口令"}},"2":{"showcashtype":true,"1":{"1":{"sitetype":"img"},"2":{"cashsite":"http://","sitetype":"url"}},"2":{"sitetype":"text"},"3":{"showsitebox":false,"sitetype":"img","opti":"复制券码发送到公众号","btn":"前往公众号兑奖"},"4":{"opti":"点击\u201C立即兑奖\u201D跳转到兑奖界面","cashsite":"http://","sitetype":"url","site":"网页链接"},"5":{"opti":"点击\u201C联系客服兑奖\u201D，添加客服微信，发送券码兑奖","sitetype":"serviceWx","site":"客服微信号","btn":"联系客服兑奖"},"site":"兑奖地址"},"4":{"collect":"收藏兑奖券","opti":"到店后向店员出示","codename":"优惠码","details":"优惠券详情","deadline":"使用期限","qrcode":"auto","showwxcard":false,"notice":"使用须知","sitetype":"none","btn":"领取到微信卡包"},"5":{"collect":"收藏口令码","showsitebox":false,"codename":"口令码","deadline":"领取期限","showwxcard":false,"notice":"领取须知","cuscode":false,"term":false,"0":{"sitetype":"img","opti":"复制口令发送到公众号","btn":"前往公众号兑奖"},"1":{"sitetype":"wxUrl","opti":"点击下方\"立即领取\"进行兑奖","btn":"立即领取","showcopy":false}},"6":{"isHdGift":true,"term":false,"cuscode":false,"showwxcard":false,"showsitebox":false,"0":{"sitetype":"img","opti":"复制口令发送到公众号","btn":"前往公众号兑奖"},"1":{"sitetype":"wxUrl","opti":"点击下方\"立即兑奖\"输入手机号码充值","btn":"立即兑奖","showcopy":false}},"7":{"isHdGift":true,"term":false,"cuscode":false,"showwxcard":false,"showsitebox":false,"0":{"sitetype":"img","opti":"复制口令发送到公众号","btn":"前往公众号兑奖"},"1":{"sitetype":"wxUrl","opti":"点击下方\"立即兑奖\"输入手机号码充值","btn":"立即兑奖","showcopy":false}},"8":{"isHdGift":true,"collect":"收藏优惠券","term":false,"cuscode":false,"showwxcard":false,"showsitebox":false,"cashinfo":"卡密的有效使用期请以卡密页显示为准","0":{"sitetype":"img","opti":"复制口令发送到公众号","btn":"前往公众号兑奖"},"1":{"sitetype":"wxUrl","opti":"点击下方\"获取卡密\"获取激活码","btn":"获取卡密","showcopy":false}},"9":{"isJZcoupon":true,"term":false,"cuscode":false,"showsitebox":false},"10":{"showcashtype":true,"site":"兑奖地址","isCusCode":false,"isWxCash":false,"cuscode":false,"2":{"sitetype":"text"},"4":{"opti":"点击\u201C立即兑奖\u201D跳转到兑奖界面","cashsite":"http://","sitetype":"url","site":"网页链接"},"5":{"opti":"点击\u201C联系客服兑奖\u201D，添加客服微信，发送券码兑奖","sitetype":"serviceWx","site":"客服微信号","btn":"联系客服兑奖"}},"11":{"isHdGift":true,"term":false,"cuscode":false,"showwxcard":false,"showsitebox":false,"cashinfo":"卡密的有效使用期请以卡密页显示为准","0":{"sitetype":"img","opti":"复制口令发送到公众号","btn":"前往公众号兑奖"},"1":{"sitetype":"wxUrl","opti":"点击下方\"获取卡密\"获取激活码","btn":"获取卡密","showcopy":false}},"12":{"isHdGift":true,"term":false,"cuscode":false,"showwxcard":false,"showsitebox":false,"cashinfo":"卡密的有效使用期请以卡密页显示为准","0":{"sitetype":"img","opti":"复制口令发送到公众号","btn":"前往公众号兑奖"},"1":{"sitetype":"wxUrl","opti":"点击下方\"获取卡密\"获取激活码","btn":"获取卡密","showcopy":false}},"13":{"isHdGift":true,"term":false,"cuscode":false,"showwxcard":false,"showsitebox":false,"cashinfo":"卡密的有效使用期请以卡密页显示为准","0":{"sitetype":"img","opti":"复制口令发送到公众号","btn":"前往公众号兑奖"},"1":{"sitetype":"wxUrl","opti":"点击下方\"获取卡密\"获取激活码","btn":"获取卡密","showcopy":false}},"15":{"isHdGift":true,"term":false,"cuscode":false,"showwxcard":false,"showsitebox":false,"cashinfo":"卡密的有效使用期请以卡密页显示为准","0":{"sitetype":"img","opti":"复制口令发送到公众号","btn":"前往公众号兑奖"},"1":{"sitetype":"wxUrl","opti":"点击下方\"获取卡密\"获取激活码","btn":"获取卡密","showcopy":false}},"16":{"isHdGift":true,"term":false,"cuscode":false,"showwxcard":false,"showsitebox":false,"cashinfo":"卡密的有效使用期请以卡密页显示为准","0":{"sitetype":"img","opti":"复制口令发送到公众号","btn":"前往公众号兑奖"},"1":{"sitetype":"wxUrl","opti":"点击下方\"获取卡密\"获取激活码","btn":"获取卡密","showcopy":false}},"17":{"isHdGift":true,"term":false,"cuscode":false,"showwxcard":false,"showsitebox":false,"cashinfo":"卡密的有效使用期请以卡密页显示为准","0":{"sitetype":"img","opti":"复制口令发送到公众号","btn":"前往公众号兑奖"},"1":{"sitetype":"wxUrl","opti":"点击下方\"获取卡密\"获取激活码","btn":"获取卡密","showcopy":false}},"20":{"isHdGift":true,"term":false,"cuscode":false,"showwxcard":false,"showsitebox":false,"cashinfo":"卡密的有效使用期请以卡密页显示为准","0":{"sitetype":"img","opti":"复制口令发送到公众号","btn":"前往公众号兑奖"},"1":{"sitetype":"wxUrl","opti":"点击下方\"获取卡密\"获取激活码","btn":"获取卡密","showcopy":false}}},"$$ptTotalPlayer":0,"$$isProduction":true,"areaLimitList":[],"linkInfoAll":true,"isForbidShareactivity":false,"drawType":1,"createTime":1572491836000,"isYKY":false,"awardNum":3,"giftNum":3,"openComfort":false,"storeId":0,"areaId":0,"fromAccessKeyQrcode":false,"qrCodeAccessKey":"","$$fromMinapp_Jfly":false,"nestedGameOriginalModelAid":0,"nestedGameOriginalModelGameId":0,"ishasAttentiosThisAPP":false,"clickTips":{"clickSrc":"//hdg.faisys.com/image/clickView.png","pointW":"2rem","pointH":"2rem","clickW":"3.3rem","clickH":"3.65rem"},"acctOpenId":"oosnVwuzoyEHE2a8ztSyhSbR3U60","achieveToken":"","isOldFaiImgGame":false,"verInfo":{"freName":"免费版","byName":"白银版","bjName":"铂金版","zsName":"钻石版","freClass":"ver_free","byClass":"ver_by","bjClass":"ver_biz","zsClass":"ver_zs","verName":"铂金版","verClass":"ver_biz","ver":1,"createVer":1,"authVer":2,"realVer":2,"createAuthVer":2,"realCreateAuthVer":2,"maxAuthVer":2,"gameAmountLimit":10000,"awardAmountLimit":50000,"canalAmountLimit":30,"map":{"0":{"class":"ver_free","name":"免费版"},"1":{"class":"ver_by","name":"白银版"},"2":{"class":"ver_biz","name":"铂金版"},"3":{"class":"ver_zs","name":"钻石版"}}},"initTime":0,"initTimeSign":"db65634db5c180a0f5acc0553b1d8e7a","redPacketUrl":"https://hd.faisco.cn/7020498/158/jumptoRedPacket.html?gameAppid=wx25367438c8ce0799","sendGiftUrl":"https://hd.faisco.cn/7020498/158/gift_Exchange.html","sendVideoVipUrl":"https://hd.faisco.cn/7020498/158/videoVip_Exchange.html","urlToken":"XW6aET6TwajvMPvag7rcdA","freeFirstPublish":false,"openAdvertising":false,"openAdvertisingLimitDisplay":true,"advertisingTime":3,"openAdvertisingForceWatch":false,"advertisingDisplayModel":1,"isCreateImageSharePattern":false,"_zhuliGameCreateImageShare":[],"oemCloseSkillSupport":false,"fansOnly":false,"isServiceAccount":true,"isIdentify":false,"openNew_Qt":true,"qtInfoParam":{},"isU_PlusAccount":false,"isHideskillInfo":true,"hasGiftList":false,"isSpecialMinappGame":false,"jumpType":1,"$$sensitWordAndAdvance":[{"sensword":"游戏","adVance":"活动"},{"sensword":"红包","adVance":"hong包"},{"sensword":"紅包","adVance":"hong包"},{"sensword":"分享","adVance":"fen享"},{"sensword":"现金","adVance":"xian金"},{"sensword":"朋友圈","adVance":"peng友圈"},{"sensword":"福利","adVance":"fu利"}],"hasSwiperBanner":false,"showOrderSlide":false,"hideRank":false,"$$isSendMsg":false,"$$isHasRank":true,"$$hasLuckShakePage":true,"shakeModel":0,"$$hasToStorePay":false,"$$isToStorePay":false,"isPTGame":false,"isOpenGuideFollow":false,"isUseLF":false,"qrCodeType":1,"isCloseShareCircleOfFriends":false,"internalJoinLimit":0,"bindAuthorizerUrl":"https://hd.faisco.cn/error_tomcat.jsp?msg=%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2%EF%BC%8C%E8%AF%B7%E8%81%94%E7%B3%BB%E4%B8%BB%E5%8A%9E%E6%96%B9","isVersion3":false,"HWRatio":1.575,"minBgH":25.2,"openAccessKeyOnce":false,"accesspopuptitle":"输入活动密码后进入活动","hasWXAuth":false,"fromGuideShare":false,"useSwiperBanner":true,"open_webp":true,"showActiveEndPage":false};
+    var HdVerDef = {
+        FREE: 0,  //免费版
+        BY: 1,  //白银版
+        BJ: 2,  //铂金版
+        ZS: 3,
+        MD: 4,
+    };
+
+    
+</script>
+
+<script type="text/javascript" src="js/jquery-core.min.js?v=201910141608"></script>
+
+<script type="text/javascript" src="//hdg.faisys.com/js/hdUtil.min.js?v=201910141608"></script>
+<script type="text/javascript" src="js/HDgame.js?v=1.2"></script>
+
+
+<script type="text/javascript" src="//hdg.faisys.com/js/lufylegend_simplify.min.js?v=202001031936"></script>
+
+<script type="text/javascript" src="//hdg.faisys.com/js/singlePageSet.min.js?v=201910141608"></script>
+<script type="text/javascript" src="js/index.js?v=1.3"></script>
+<script type="text/javascript" src="js/api.js?v=1.3"></script>
+<script type="text/javascript" src="js/formValidate.js?v=1.3"></script>
+ <script src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+ <script type="text/javascript" src="js/share.js?v=1.3"></script>
+<script type="text/javascript">
+
+    HdGame.gameDomain = 'hd.faisco.cn';
+
+    function $$(selector){
+        if(!_manage || _preview){
+            return $('#__notfound__');
+        }
+        return parent.$(selector);
+    }
+
+    function parseRemToPx(rem){
+        if(rem.indexOf('rem') === -1){
+            return parseFloat(rem);
+        }
+        return parseFloat(rem)*g_rem;
+    }
+
+    function parsePxToRem(px){
+        if(px.indexOf('px') === -1){
+            return px;
+        }
+        return parseFloat(px)/g_rem + 'rem';
+    }
+
+    HdGame.Res.config({"js_city":"//hdg.faisys.com/js/comm/city2.min.js?v=201912021132","swiper_simple":"//hdg.faisys.com/js/swiper_simple.min.js?v=201910221412","js_clipboard":"//hdg.faisys.com/js/comm/clipboard.min.js?v=201910141608"});
+    //log华为机型 -> 暂时开放全部
+    // if(/HUAWEI/i.test(navigator.userAgent)){
+        HdGame.logStd("7020498 UserAgent", navigator.userAgent);
+    // }
+
+HdGame.initJsHead(hg, {"loadingStyle":1,"maxIncrement":50,"isOpenAdvertise":false,"editPropList":[{"name":"playInfo","pos":{"left":"3.5rem","top":"14.5rem"},"css":[{"css":[{"opt":0,"val":14,"defVal":14},{"opt":0,"val":"#fff","defVal":"#fff","tra":-1,"defTra":-1},{"opt":0,"val":"","defVal":"","tra":-1,"defTra":-1}],"opt":0},{"css":[{"opt":0,"val":14,"defVal":14},{"opt":0,"val":"#fff799","defVal":"#fff799","tra":-1,"defTra":-1},{"opt":0,"val":"","defVal":"","tra":-1,"defTra":-1}],"opt":0}]},{"name":"theGetPricePic","pos":{"left":"1.2rem","top":"1.5rem"},"size":{"width":"13.5rem","height":"16.75rem"},"path":[["//hdg.faisys.com/image/faiImg.png"]]},{"name":"theGetPricePicTwo","pos":{"left":"1.2rem","top":"1.5rem"},"size":{"width":"13.5rem","height":"16.75rem"},"path":[["//hdg.faisys.com/image/faiImg2.png"]]},{"name":"theGetPricePicThree","pos":{"left":"NaNrem","top":"NaNrem"},"size":{"width":"4rem","height":"4rem"},"path":[["//hdg.faisys.com/image/faiImg3.png"]]},{"name":"lotsPot","pos":{"left":"4.9rem","top":"3rem"},"size":{"width":"6.15rem","height":"12.4rem"},"path":[["//hdg.faisys.com/image/lots1.png"]]},{"name":"lotsShakeHand","pos":{"left":"4.5rem","top":"17.9rem"}},{"name":"advertising","path":["https://hdg.faisys.com/image/gg.jpg"]}],"editPropListDef":[{"name":"playInfo","pos":{"left":"3.5rem","top":"14.5rem","forParent":"false"},"css":[{"title":"常规文字","opt":0,"from":"#playInfo","css":[{"type":"size","name":"font-size","val":14,"defVal":14,"opt":0},{"type":"color","name":"color","defVal":"#fff","val":"","tra":-1,"defTra":-1,"opt":0},{"type":"color","name":"text-shadow","val":"","defVal":"","tra":-1,"defTra":-1,"opt":0}]},{"title":"参与机会","opt":0,"from":"#playInfo .specil","css":[{"type":"size","name":"font-size","val":14,"defVal":14,"opt":0},{"type":"color","name":"color","val":"","defVal":"#fff799","tra":-1,"defTra":-1,"opt":0},{"type":"color","name":"text-shadow","val":"","defVal":"","tra":-1,"defTra":-1,"opt":0}]}],"edit":3,"formDefaultStyle":true},{"name":"theGetPricePic","pos":{"left":"3.25rem","top":"0"},"size":{"width":"9.5rem","height":"11.5rem"},"path":[["*_resRoot*/image/faiImgNew.png","图片01","5000k"]],"edit":"theGetPricePic","formDefaultStyle":true},{"name":"theGetPricePicTwo","pos":{"left":"3.25rem","top":"0"},"size":{"width":"9.5rem","height":"11.5rem"},"path":[["*_resRoot*/image/faiImgNew.png","图片01","5000k"]],"edit":"theGetPricePicTwo","formDefaultStyle":true},{"name":"theGetPricePicThree","pos":{"left":"3.25rem","top":"0"},"size":{"width":"9.5rem","height":"11.5rem"},"path":[["*_resRoot*/image/faiImgNew.png","图片01","5000k"]],"edit":"theGetPricePicThree","notAutoGeneration":true,"formDefaultStyle":true},{"name":"lotsShakeHand","pos":{"left":"4.5rem","top":"17.9rem","forParent":"false"},"edit":"_none","formDefaultStyle":true},{"name":"advertising","targetName":"广告页设置","deferPath":true,"group":"home","rsize":{"width":"16rem","height":"40rem"},"path":[["*_resRoot*/image/gg2.png","背景图片","5000k"],["*_resRoot*/image/gg2.png","背景图片","5000k"],["*_resRoot*/image/gg2.png","背景图片","5000k"],["*_resRoot*/image/gg2.png","背景图片","5000k"]],"edit":"_background","formDefaultStyle":true},{"name":"slogan","pos":{"left":"0.17rem","top":"0.17rem","forParent":"false"},"css":[{"type":"size","name":"font-size","val":12,"defVal":12,"opt":0},{"type":"color","name":"color","val":"#FFFFFF","defVal":"#FFFFFF","tra":1,"defTra":1,"opt":0},{"type":"color","name":"text-shadow","val":"#FFFFFF","defVal":"#FFFFFF","tra":0,"defTra":0,"opt":0}],"edit":2,"formDefaultStyle":true},{"name":"fissionDetailBg","targetName":"编辑背景","group":"fission","rsize":{"width":"16rem","height":"40rem"},"path":["*_resRoot*/image/fission/myFissionBg.jpg","背景图片","5000k"],"cssEdit":1,"css":[{"title":"背景颜色","targetName":"背景颜色","opt":0,"css":[{"type":"color","name":"background-color","val":"#fff","defVal":"#fff","tra":1,"defTra":1,"opt":0}]}],"edit":"_backgroundAll","formDefaultStyle":true},{"name":"fissionShareBg","targetName":"编辑背景","group":"fission","rsize":{"width":"16rem","height":"40rem"},"path":["*_resRoot*/image/fission/shareFissionBg.jpg","背景图片","5000k"],"edit":"_background","formDefaultStyle":true},{"name":"fissionInviteBtn","group":"fission","rsize":{"width":"11.5rem","height":"2rem"},"path":["*_resRoot*/image/fission/inviteBtn.png","邀请按钮","5000k"],"edit":"fissionInviteBtn,fissionCheckBtn","formDefaultStyle":true},{"name":"fissionCheckBtn","group":"fission","rsize":{"width":"11.5rem","height":"2rem"},"path":[["*_resRoot*/image/fission/seeAward_share.png","查看按钮（裂变中）","5000k"],["*_resRoot*/image/fission/seeAward.png","查看按钮（裂变完成）","5000k"]],"edit":"fissionInviteBtn,fissionCheckBtn","formDefaultStyle":true},{"name":"fissionShareTxt","pos":{"left":"2.3rem","top":"6.65rem","forParent":"false"},"css":[{"title":"常规文字","opt":0,"from":".shareFissionTxt","css":[{"type":"size","name":"font-size","val":15,"defVal":15,"opt":0},{"type":"color","name":"color","val":"#8d2525","defVal":"#8d2525","tra":-1,"defTra":-1,"opt":0},{"type":"color","name":"text-shadow","val":"#fff","defVal":"#fff","tra":0,"defTra":0,"opt":0}]}],"formDefaultStyle":true},{"name":"fissionShareName","pos":{"left":"2.3rem","top":"8.5rem","forParent":"false"},"css":[{"title":"常规文字","opt":0,"from":".shareFissionName","css":[{"type":"size","name":"font-size","val":24,"defVal":24,"opt":0},{"type":"color","name":"color","val":"#ff4f48","defVal":"#ff4f48","tra":-1,"defTra":-1,"opt":0},{"type":"color","name":"text-shadow","val":"#fff","defVal":"#fff","tra":0,"defTra":0,"opt":0}]}],"formDefaultStyle":true},{"name":"fissionShareBtn","group":"fission","size":{"width":"9rem","height":"2.75rem"},"pos":{"left":"3.5rem","top":"10.25rem"},"path":[["*_resRoot*/image/fission/get.png","领取按钮","5000k"],["*_resRoot*/image/fission/backIndex.png","返回首页","5000k"]],"edit":"fissionShareBtn","formDefaultStyle":true},{"name":"openBoxNew","size":{"width":"13rem","height":"11.5rem"},"pos":{"left":"1.5rem","top":"4.12rem"},"path":["*_resRoot*/image/shakePageNew/baoxiang.png","宝箱图片","5000k"],"edit":"openBoxNew,showBoxNew","formDefaultStyle":true},{"name":"showBoxNew","rsize":{"width":"13rem","height":"11.5rem"},"pos":{"left":"1.5rem","top":"4.12rem"},"path":["*_resRoot*/image/shakePageNew/kaixiang.png","开箱图片","5000k"],"edit":"showBoxNew","formDefaultStyle":true},{"name":"model_guawoBg","pos":{"left":"0.92rem","top":"7rem","forParent":"false"},"rsize":{"width":"14.15rem","height":"6.83rem"},"path":["*_resRoot*/image/shakePageNew/draw/guawoBg2.png","底色","5000k"],"edit":"model_guawoBg,model_guawo,model_award1,model_award2,model_award3,model_award4,model_award5,model_award6,model_award7,model_award8,model_award900,model_award0","formDefaultStyle":true},{"name":"model_guawo","pos":{"left":"1.52rem","top":"7.62rem","forParent":"false"},"rsize":{"width":"12.95rem","height":"5.6rem"},"path":["*_resRoot*/image/shakePageNew/draw/guawo2.png","刮层","5000k"],"edit":"model_guawoBg,model_guawo,model_award1,model_award2,model_award3,model_award4,model_award5,model_award6,model_award7,model_award8,model_award900,model_award0","formDefaultStyle":true},{"name":"model_award1","rsize":{"width":"12.95rem","height":"5.6rem"},"path":["*_resRoot*/image/shakePageNew/draw/award1.png","奖项一","5000k"],"edit":"_none","formDefaultStyle":true},{"name":"model_award2","rsize":{"width":"12.95rem","height":"5.6rem"},"path":["*_resRoot*/image/shakePageNew/draw/award2.png","奖项二","5000k"],"edit":"_none","formDefaultStyle":true},{"name":"model_award3","rsize":{"width":"12.95rem","height":"5.6rem"},"path":["*_resRoot*/image/shakePageNew/draw/award3.png","奖项三","5000k"],"edit":"_none","formDefaultStyle":true},{"name":"model_award4","rsize":{"width":"12.95rem","height":"5.6rem"},"path":["*_resRoot*/image/shakePageNew/draw/award4.png","奖项四","5000k"],"edit":"_none","formDefaultStyle":true},{"name":"model_award5","rsize":{"width":"12.95rem","height":"5.6rem"},"path":["*_resRoot*/image/shakePageNew/draw/award5.png","奖项五","5000k"],"edit":"_none","formDefaultStyle":true},{"name":"model_award6","rsize":{"width":"12.95rem","height":"5.6rem"},"path":["*_resRoot*/image/shakePageNew/draw/award6.png","奖项六","5000k"],"edit":"_none","formDefaultStyle":true},{"name":"model_award7","rsize":{"width":"12.95rem","height":"5.6rem"},"path":["*_resRoot*/image/shakePageNew/draw/award7.png","奖项七","5000k"],"edit":"_none","formDefaultStyle":true},{"name":"model_award8","rsize":{"width":"12.95rem","height":"5.6rem"},"path":["*_resRoot*/image/shakePageNew/draw/award8.png","奖项八","5000k"],"edit":"_none","formDefaultStyle":true},{"name":"model_award900","rsize":{"width":"12.95rem","height":"5.6rem"},"path":["*_resRoot*/image/shakePageNew/draw/award9.png","安慰奖","5000k"],"edit":"_none","formDefaultStyle":true},{"name":"model_award0","rsize":{"width":"12.95rem","height":"5.6rem"},"path":["*_resRoot*/image/shakePageNew/draw/award10.png","谢谢参与","5000k"],"edit":"_none","formDefaultStyle":true},{"name":"model_deviceLineNew","rsize":{"width":"0.05rem","height":"16rem"},"path":["*_resRoot*/image/shakePageNew/device.png","切割线","5000k"],"group":"home","formDefaultStyle":true},{"name":"model_rotatePanNew","rsize":{"width":"14.8rem","height":"14.8rem"},"path":["*_resRoot*/image/shakePageNew/rotatePan.png","大转盘","5000k"],"group":"home","formDefaultStyle":true},{"name":"model_startBtn","rsize":{"width":"3.75rem","height":"5.525rem"},"path":["*_resRoot*/image/shakePageNew/startBtn.png","指针","5000k"],"edit":"model_startBtn","formDefaultStyle":true},{"name":"model_zp1","rsize":{"width":"6.9rem","height":"6.9rem"},"path":["*_resRoot*/image/shakePageNew/zp1.png","奖项一","5000k"],"group":"home","formDefaultStyle":true},{"name":"model_zp2","rsize":{"width":"6.9rem","height":"6.9rem"},"path":["*_resRoot*/image/shakePageNew/zp2.png","奖项二","5000k"],"group":"home","formDefaultStyle":true},{"name":"model_zp3","rsize":{"width":"6.9rem","height":"6.9rem"},"path":["*_resRoot*/image/shakePageNew/zp3.png","奖项三","5000k"],"group":"home","formDefaultStyle":true},{"name":"model_zp4","rsize":{"width":"6.9rem","height":"6.9rem"},"path":["*_resRoot*/image/shakePageNew/zp4.png","奖项四","5000k"],"group":"home","formDefaultStyle":true},{"name":"model_zp5","rsize":{"width":"6.9rem","height":"6.9rem"},"path":["*_resRoot*/image/shakePageNew/zp5.png","奖项五","5000k"],"group":"home","formDefaultStyle":true},{"name":"model_zp6","rsize":{"width":"6.9rem","height":"6.9rem"},"path":["*_resRoot*/image/shakePageNew/zp6.png","奖项六","5000k"],"group":"home","formDefaultStyle":true},{"name":"model_zp7","rsize":{"width":"6.9rem","height":"6.9rem"},"path":["*_resRoot*/image/shakePageNew/zp7.png","奖项七","5000k"],"group":"home","formDefaultStyle":true},{"name":"model_zp8","rsize":{"width":"6.9rem","height":"6.9rem"},"path":["*_resRoot*/image/shakePageNew/zp8.png","奖项八","5000k"],"group":"home","formDefaultStyle":true},{"name":"model_zp900","rsize":{"width":"6.9rem","height":"6.9rem"},"path":["*_resRoot*/image/shakePageNew/zp900.png","安慰奖","5000k"],"group":"home","formDefaultStyle":true},{"name":"model_zp0","rsize":{"width":"6.9rem","height":"6.9rem"},"path":["*_resRoot*/image/shakePageNew/zp0.png","谢谢参与","5000k"],"group":"home","formDefaultStyle":true},{"name":"model_wrapNew","edit":"model_deviceLineNew,model_rotatePanNew,model_zp1,model_zp2,model_zp3,model_zp4,model_zp5,model_zp6,model_zp7,model_zp8,model_zp900,model_zp0","group":"home","formDefaultStyle":true},{"name":"model_shakeHandsBox","size":{"width":"11.25rem","height":"11.5rem"},"pos":{"left":"2.55rem","top":"3.35rem","forParent":"false"},"path":["*_resRoot*/image/shakePageNew/yaoyiyao/shakeBg.png","摇动背景","5000k"],"edit":"model_shakeHandsBox,model_shakeHands,model_shakeFlag","group":"home","formDefaultStyle":true},{"name":"model_shakeHands","path":["*_resRoot*/image/shakePageNew/yaoyiyao/shake.png","摇动图片","5000k"],"group":"home","formDefaultStyle":true},{"name":"model_shakeFlag","path":["*_resRoot*/image/shakePageNew/yaoyiyao/flag.png","旗子","5000k"],"group":"home","formDefaultStyle":true}],"editPropListIsMod":false,"advertisingNum":1,"gameImg":"/image/game/s_csyx.jpg","openStrongAttention":false,"strongAttIMG":"https://13232127.h40.faiusr.com/2/ACgIABACGAAg2pvV8AUosqb8ogEwkAM4kAM.jpg?wx_fmt=jpeg&wxfrom=5&wx_lazy=1","logoImg_path":"//hdg.faisys.com/image/logo.jpg","startImg_path":"http://7020498.h40.faiusr.com/4/158/ACgIABAEGAAgp5mayQUogNXVmgYw9gE4ZA.png","gameBgPath":"http://7020498.h40.faiusr.com/2/158/ACgIABACGAAgvb-owgUo3ZbTzAYwgAU4wAw.jpg","homeBgPath":"http://7020498.h40.faiusr.com/2/158/ACgIABACGAAgg77owgUoqOLJ8AcwgAU4wAw.jpg","titleImg_path":"https://7020498.h40.faiusr.com/4/158/ACgIABAEGAAgk9XH0QUo6I-_mAcwgAU4wAI.png","gameTimeNumDef":0,"soundList":[{"path":"//hdg.faisys.com/image/csyx/bgmusic01M.mp3","fileName":"背景音乐.mp3","optFlag":0},{"path":"//hdg.faisys.com/image/csyx/jump.mp3","fileName":"跳跃音效.mp3","optFlag":2}],"soundListDef":[{"path":"*_resRoot*/image/csyx/music/bg_music.mp3","fileName":"背景音乐.mp3","optFlag":0},{"path":"*_resRoot*/image/csyx/jump.mp3","fileName":"跳跃音效.mp3","optFlag":2}],"openAccessKey":false})
+
+</script>
+
+<script type='text/javascript' src="//hdg.faisys.com/js/fission.min.js?v=201910141608"></script>
+
+
+<script type='text/javascript' src="//hdg.faisys.com/js/game/shakePage.min.js?v=201911041015"></script>
+
+
+
+<script type="text/javascript">
+//HdGame.initWxConfig({"comfortAwardStyle":"","isHideShareBtn":false,"isHideMenuItems":false,"fullUrl":"https://7020498-158.hd.faisco.cn/7020498/XW6aET6TwajvMPvag7rcdA/load.html?style=15","nameList":["一等奖","二等奖","三等奖","四等奖","五等奖","六等奖","七等奖","八等奖","安慰奖"],"jsSdkAppid":"wx50775cad5d08d7ad","timestamp":"1578624147","nonce_str":"294ab315-ba5b-4dc9-a57d-bf596ce33b61","signature":"327621dd57148a22ff783a3d6227b5ae0856622d","cardTicket":"","dynamicShareUrlRootEmpty":false,"dynamicShareUrlRoot":"http://7020498-158.hd.faisco.cn/","fsl":"b","shareDeep":1,"checkControlLevel":0,"openStrongAttention":false,"shareImg":"http://7020498.h40.faiusr.com/4/158/ACgIABAEGAAg35a6xQUouqqtrwUwyAE4yAE!160x160.png","activeName":"舞狮子喜迎新春","wxShareText_def":"轻轻松松就能抽到大奖，积攒多年的人品终于有用了，你也赶紧来抽奖吧！！","wxShareText_award":"<span class=\"tag\" contenteditable=\"false\">玩家名称<\/span>已经在活动里赢得<span class=\"tag\" contenteditable=\"false\">奖品名称<\/span>，你也快来玩游戏赢大奖吧！","wxShareText_rank":"<span class=\"tag\" contenteditable=\"false\">玩家名称<\/span>以<span class=\"tag\" contenteditable=\"false\">游戏成绩<\/span>的成绩傲视群雄，你敢来挑战Ta赢取丰厚奖品吗？","addDrawTime":1})
+
+</script>
+
+<script type="text/javascript">
+    var _gameOver = false; 
+    var GameArg = {accelerationX:0};
+(function(){
+    _ruleInfo.open = true;
+    var jumperImg = new ImageObject();
+    var cloudList = [];
+    var xList = [];
+    var cloudWidth = parseRemToPx('5.5rem');
+    var jumperWidth = parseRemToPx('3.25rem');
+    var level = 1;//游戏分数等级
+    var uid = 0;
+    var step = 0;
+    GameArg.isStart = true;
+    var gameFirst = true;
+    var cloudDistance = 0;//云之间的距离
+    var isOverThitenMinutes = 6 * 60 * 1000;//10分钟
+    var theStartTime = 0;
+    var theDistance = 4;
+    var theIndex = 1;
+    var clientWidth = $(window).width(),
+        clientHeight = $(window).height();
+    var jumpImg_x = 0;
+    var theProtectImg_1 = new ImageObject();
+    var theProtectImg_2 = new ImageObject();
+    hg.assets.onReady(function(){
+        theProtectImg_1.image = hg.assets['//hdg.faisys.com/image/protect_1.png'];
+        theProtectImg_2.image = hg.assets['//hdg.faisys.com/image/protect_2.png?v=201710231622'];
+    })
+    
+    //跳跃的对象
+    function createProtect(jumpImger){
+        if(jumpImger){
+            var middleX = jumpImger.x + jumpImger.w / 2;
+            var theTargetLeft = middleX - canvas.width / 2 + 0.3 * g_rem;
+            theProtectImg_2.x = theTargetLeft;
+            theProtectImg_1.startTimeStamp = new Date().getTime();
+        }
+        drawImg(theProtectImg_1);
+        drawImg(theProtectImg_2);
+    }
+    function destroyProtect(){
+        if(!theProtectImg_1.startTimeStamp)return;
+        var nowTime = new Date().getTime();
+        var currentTime = 500;
+        if((nowTime - theProtectImg_1.startTimeStamp) > currentTime){
+            ctx.clearRect(0,0,canvas.width,theProtectImg_2.h);
+            delete theProtectImg_1.startTimeStamp;
+        }else{
+            createProtect();
+        }
+    }
+    if(_manage){
+        window.onload = function(){ //兼容IE10
+            setTimeout(function(){
+                clientWidth = $(window).width();
+                clientHeight = $(window).height();
+                $('#gameBgBox').css('height',clientHeight);
+                $('#homeBgBox').css('height',"29.5rem");
+            },10);
+        };
+    }
+    
+    $(function(){
+		
+        canvas = document.getElementById("canvas");
+        ctx = canvas.getContext("2d");
+
+        hg.time.init();
+        var bgHeight = $(window).height() < 504 ? 504 : $(window).height();
+        $('#gameBgBox').css('height',bgHeight);
+        if(_manage){     
+            $('.titleImg').addClass('abs');
+            $('#jumpUpImg,#cloud3').addResizableFn('resize',function(event,ui) {
+                $(ui.element).css('top',ui.originalPosition.top + ui.originalSize.height - parseFloat($(ui.element).css('height')));
+            });
+            $('.csyx_cloud').addResizableFn('resize',function(event,ui) {
+                var csyx_cloud = $('.csyx_cloud').add($('.csyx_cloud').parents(".ui-wrapper"));
+                csyx_cloud.css('width',$(ui.element).width());
+                csyx_cloud.css('height',$(ui.element).height());
+            });
+            var gameImgArgs = [
+                {
+                    from : "#jumpUpImg",
+                    title : '游戏角色01',
+                    limit : '5000k',
+                    defSrc : '//hdg.faisys.com/image/csyx/p1.png',
+                },{
+                    from : "#jumpDownImg",
+                    title : '游戏角色02',
+                    limit : '5000k',
+                    defSrc : '//hdg.faisys.com/image/csyx/p2.png',
+                },{
+                    from : "#cloud1,#cloud2,#cloud3",
+                    title : '游戏角色03',
+                    limit : '5000k',
+                    defSrc : '//hdg.faisys.com/image/csyx/cloud.png',
+                }
+            ];
+            HdGame.initModuleLayer('#jumpUpImg',-1,"",gameImgArgs);
+            HdGame.initModuleLayer('#cloud1,#cloud2,#cloud3',-1,"",gameImgArgs);
+            HdGame.moduleSlaveImgResize($('#jumpUpImg'),{width:'4rem',height:'4rem',left:'5rem',top:'15rem'},'#gamePlayPanel');
+            HdGame.moduleSlaveImgResize($('#cloud1'),{width:'5.5rem',height:'1.5rem',left:'0rem',top:'0rem'});
+            HdGame.moduleSlaveImgResize($('#cloud2'),{width:'5.5rem',height:'1.5rem',left:'5rem',top:'5rem'});
+            HdGame.moduleSlaveImgResize($('#cloud3'),{width:'5.5rem',height:'1.5rem',left:'0rem',top:'11.5rem'},'#gamePlayPanel'); 
+            $('.csyx_cloud').addResizableFn('recover',function(){
+                $('.csyx_cloud').not(this).each(function(index, el) {
+                    $(this).add($(this).parent()).css($(this).data('defData'));
+                });
+            })
+        }else{
+            hg.showGameBox = false;
+            hg.on('startGame',function(flag,event,data,showGame){
+			
+                loadXlist(function(){
+					
+                    showGame();
+                    if(!HdGame.isplaySucess){
+                        $('#courseBg').show();
+                        GameArg.isStart = false;
+                    }
+					console.log("xList",xList);
+                    if(gameFirst){
+                        gameStart();
+                    }else{
+                        gameInit();
+                    }
+                });
+                //gameEnd();
+            });
+            hg.time.updateFlag = false;
+            hg.time.on('end',gameEnd);
+            $(canvas).on('touchmove',function(event){
+                event.preventDefault();
+                event.stopPropagation();
+            });
+        }
+
+        window.addEventListener('devicemotion', deviceMotionHandler, false);        
+        window.requestAnimFrame = (function() {
+            if(isIPhone4()){
+                return function(callback) {
+                    window.setTimeout(callback, 40);
+                }
+            }
+            return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+            function(callback) {
+                window.setTimeout(callback, 1000/60);
+            }
+        })();   
+        $('#courseBg').on('touchend',function(){
+            if(!GameArg.isStart){
+                $(this).hide();
+                GameArg.isStart = true;
+                hg.time.start();
+            }
+        }); 
+        
+    });     
+    
+    function isIPhone4(){
+        return window.navigator.userAgent.indexOf('iPhone') !== -1&&(window.screen.availHeight === 460);
+    }
+
+    function isAndroid(){
+        return window.navigator.userAgent.indexOf('Android') !== -1;
+    }
+
+    function loadXlist(callback){
+	
+        if(_manage){
+            callback && callback();
+            return;
+        }
+       
+			var r = {"data":{"initTime":0,"xList":[9.4204,2.734,8.8631,1.8389,10.4015,3.0307,2.0857,1.7421,8.7931,7.7456,2.7885,0.1313,0.908,1.777,5.6535,6.4208,1.4551,4.6329,7.9361,0.6757,0.5272,9.9855,4.4692,0.5678,6.4624,9.151,9.4911,4.1548,0.013,2.2031,3.0647,2.1177,7.2416,9.5072,6.5404,4.6719,8.0684,7.666,4.4631,7.3368,8.4147,4.7267,8.0404,5.1071,6.4229,5.9863,3.2707,10.3211,3.2845,10.3685,8.0737,8.1607,8.774,0.6195,3.2804,0.2523,0.1707,9.4825,2.6184,6.2559,0.346,2.5671,2.3672,8.1476,6.4107,7.8274,7.6735,6.6002,9.9428,5.8944,5.5857,4.4636,7.9649,8.4907,9.7111,4.3297,1.9967,7.7692,4.0022,8.0431,6.1902,7.178,2.5529,8.2847,3.2395,2.3512,6.4198,3.0126,7.9725,7.0659,4.8896,6.09,9.7489,6.4864,3.779,8.3708,4.5309,2.2341,7.7903,9.84],"cWidth":5.5,"jWidth":3.25}};
+		
+            xList = r.data.xList;
+		
+            _ruleInfo.list = '';
+            r.data.cWidth && (cloudWidth = r.data.cWidth*g_rem);
+            r.data.jWidth && (jumperWidth = r.data.jWidth*g_rem);
+            callback && callback();
+       
+    }
+
+    function gameInit(){
+        hg.time.init();
+        hg.grade.set(0);
+        step = 0;
+        uid = 0;
+        level = 1;
+        cloudList = [];
+        _gameOver = false;
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        jumperImg.w = jumperWidth * ratio;
+        jumperImg.y = canvas.height - jumperImg.h;
+        jumperImg.x = 0;
+        theStartTime = jumperImg.time = new Date().getTime();
+        theDistance = 4;
+        jumperImg.image = hg.assets[game_assets.jumpDown];
+        var bottomHeight = 2.2*g_rem * ratio;
+        theProtectImg_1.w = parseRemToPx("16rem") * ratio;
+        theProtectImg_1.h = parseRemToPx("2.07rem") * ratio;
+        theProtectImg_1.x = 0;
+        theProtectImg_1.y = gamePlayPanel_h * ratio - theProtectImg_1.h - g_rem*ratio + bottomHeight;
+        theProtectImg_2.w = parseRemToPx("16rem") * ratio;
+        theProtectImg_2.h = parseRemToPx("4.57rem") * ratio;
+        theProtectImg_2.x = 0;
+        theProtectImg_2.y = gamePlayPanel_h * ratio - theProtectImg_2.h + bottomHeight;
+        jumperUp();
+        if(GameArg.isStart){
+            hg.time.start();
+            GameArg.isStart = true;
+        }
+        addCloudList(5);
+        jump();
+    }
+
+    function gameStart() {  
+        gamePlayPanel_t = 4*g_rem;
+        gamePlayPanel_h = clientHeight;
+        gamePlayPanel_w = $('#gamePlayPanel').width();
+        $('#gamePlayPanel').css('top',0).height(gamePlayPanel_h);
+        var backingStore = ctx.backingStorePixelRatio ||
+                        ctx.webkitBackingStorePixelRatio ||
+                        ctx.mozBackingStorePixelRatio ||
+                        ctx.msBackingStorePixelRatio ||
+                        ctx.oBackingStorePixelRatio ||
+                        ctx.backingStorePixelRatio || 1;
+        window.ratio = (window.devicePixelRatio || 1) / backingStore;
+        canvas.width = clientWidth*ratio;
+        canvas.height = gamePlayPanel_h*ratio;
+        canvas.style.width = clientWidth+"px";
+        canvas.style.height = gamePlayPanel_h+"px";
+        if(gameFirst){
+            gameFirst = false;
+            LF.setTopBarNotLF(canvas,ratio);
+        }
+        cloudDistance = canvas.height/3;
+        jumperImg.h = parseRemToPx('5.45rem') * ratio;
+        GameArg.limitY = canvas.height*0.3;
+        gameInit(); 
+    }
+
+    function gameEnd() {  
+    	
+    	gameOverUpdateRec(hg.grade.val);
+        _gameOver = true;
+        gameRestart();
+       // gameOver(hg.grade.val);
+    }
+
+    function addCloudList(num){
+        for(var i = 0; i < num; i++){
+            var cloud = creatCloud(); 
+            cloud.y = (cloudList.length ? cloudList[cloudList.length - 1].y : canvas.height) - cloudDistance;
+            cloudList.push(cloud);
+        }
+        if(cloudList.length > 5){
+            delCloud(cloudList.length - 5);
+        }
+    }
+
+    function creatCloud(){
+		
+        var cloudImg = new ImageObject();
+		
+        var rand = Math.random();
+        
+        var i = Math.floor(rand * 11);
+        
+        cloudImg.image = $("[name='cloudImg']")[i];
+        cloudImg.w = cloudWidth * ratio;
+        cloudImg.h = parseRemToPx('1.5rem') * ratio;
+       // if(!xList.index || xList.index >= xList.length) xList.index = 0;
+	   if(!xList.index || xList.index >= xList.length) xList.index = 0;
+        cloudImg.x = Math.floor(xList[xList.index++]*g_rem*ratio);
+        cloudImg.uid = uid++;
+        return cloudImg;
+    }
+
+    function delCloud(num){
+        cloudList.splice(0,num);
+    }
+
+    function stepCloud(cloud){
+        if(!cloud.hasStep){
+            hg.grade(level*10);
+            step ++;
+            if(step/20 == level && level < 4){
+                level++;
+            }
+            cloud.hasStep = true;
+            _ruleInfo.list += (_ruleInfo.list?',':'') + cloud.uid + ',' + toFixed2(jumperImg.x/(g_rem*ratio));
+        }
+        hg.sound.play(1);
+        jumperUp();
+    }
+
+    function toFixed2(num){
+        num = parseFloat(num.toFixed(2));
+        return (num === num ? num : 0)+'';
+    }
+
+    function jumperUp(){
+        var theDate = new Date().getTime();
+        if(level == 4 && (theDate - theStartTime) > isOverThitenMinutes && (step % 20) == 0){
+            theDistance += 1;
+            if(theDistance > 30){
+                theDistance = 30;
+            }
+        }
+        var theTargetLevl = level < 4 ? level : theDistance;
+        var s = (theTargetLevl + 0.4)*cloudDistance;//目标位移
+        var t = 720; //时间
+        jumperImg.a = 2*s/(t*t);
+        jumperImg.speed = -jumperImg.a*t;
+    }
+
+    function jump(){
+    	
+        if(_gameOver){
+            return;
+        }   
+        ctx.clearRect(0,0,gamePlayPanel_w*ratio,gamePlayPanel_h*ratio);
+        
+        destroyProtect();
+        
+        var currentTime = (new Date).getTime();
+        delta = currentTime - jumperImg.time; 
+        delta > 500 && (delta = 0);
+        jumperImg.time = currentTime;
+        var lastY = jumperImg.y;
+        var lastSpeed = jumperImg.speed;
+        if(GameArg.isStart){
+            if(isAndroid()){
+                jumperImg.x -= jumpImg_x*ratio;
+            }else{
+                jumperImg.x += jumpImg_x*ratio;
+            }
+            var tmp = jumpImg_x*ratio;
+            //屏幕穿梭
+            if(jumperImg.x < -jumperImg.w){
+                jumperImg.x = $(window).width()*ratio;
+            }
+            if(jumperImg.x > $(window).width()*ratio){
+                jumperImg.x = -jumperImg.w;
+            }       
+            jumperImg.speed += jumperImg.a*delta;
+            jumperImg.y += jumperImg.speed*delta;
+            if(jumperImg.speed > 0){ //速度大于0处于下降阶段
+                if(jumperImg.image !== hg.assets[game_assets.jumpDown]){
+                    jumperImg.image = hg.assets[game_assets.jumpDown];
+                }
+                for(var i = 0; i < cloudList.length; i++){ //判断是否踩到云
+                    var cloud = cloudList[i];
+                    var cloudL = cloud.x;
+                    var cloudR = cloud.x + cloud.w;
+                    var cloudT = cloud.y + cloud.h*0.3;
+                    
+                    if( lastY + jumperImg.h <= cloudT && jumperImg.y + jumperImg.h >= cloudT && jumperImg.x + 2*jumperImg.w/3 > cloudL && jumperImg.x < cloudR - jumperImg.w/3){//踩到云                                                  
+                    
+                        stepCloud(cloud);
+                        break;  
+                    }
+                }
+            }else{
+                if(jumperImg.image != hg.assets[game_assets.jumpUp]){
+                    jumperImg.image = hg.assets[game_assets.jumpUp];
+                }
+                var deltaY = GameArg.limitY - jumperImg.y;
+                if(deltaY > 0){ //背景相对运动
+                    jumperImg.y = GameArg.limitY;
+                    for(var i = 0; i < cloudList.length; i++){          
+                        cloudList[i].y += deltaY;  
+                    }
+                }
+            } 
+            if(jumperImg.y > canvas.height - jumperImg.h){
+                if(step <= 5){
+                    jumperUp();
+                    
+                    createProtect(jumperImg);
+                    
+                }else if(jumperImg.y > canvas.height){
+                    gameEnd();
+                    hg.time.end();
+                }
+            }
+            if(cloudList[0].y > canvas.height){
+                addCloudList(1);
+            } 
+        }   
+        for(var i = 0; i < cloudList.length; i++){
+            drawImg(cloudList[i]);
+        }
+        drawImg(jumperImg); 
+        hg.time.updateInFrame(delta);
+        LF.showTopBar();
+        requestAnimFrame(jump); 
+    }
+        
+    function ImageObject(){
+        this.x = 0;
+        this.y = 0;
+        this.w = 0;
+        this.h = 0;
+        this.speed = 0;
+        this.image = new Image();
+    }
+    
+    function drawImg(t){
+        ctx.drawImage(t.image,t.x,t.y,t.w,t.h);
+    }   
+    
+    var deviceMotionHandler=(function(){
+        var last_update = 0;
+        var curTime=0;
+        return function (eventData){
+            curTime = new Date().getTime();         
+               HdGame.logStd("wuyanttttestcsyx jumpImg_x_curTime", curTime);
+               HdGame.logStd("wuyanttttestcsyx jumpImg_x1", jumpImg_x);
+               if ((curTime - last_update) > 100){ 
+                   last_update = curTime;
+                   jumpImg_x = eventData.accelerationIncludingGravity.x;
+               }               
+               HdGame.logStd("wuyanttttestcsyx jumpImg_x2", jumpImg_x);
+        }  
+    })();
+
+    GameArg.gameInit = gameInit;
+    GameArg.loadXlist = loadXlist;
+
+})();
+//再次开始
+$("#zctz").click(function(){
+	
+	alert_init();
+	gameRestart();
+})
+
+
+    function gameRestart() {
+        GameArg.loadXlist(function(){
+            if(!HdGame.isplaySucess){
+                $('#courseBg').show();
+                GameArg.isStart = false;
+            }
+            GameArg.gameInit();
+            hg.fire('again');
+        });
+    }
+
+    function home(){
+        $('#ruleImg').show();
+        $('.homeBtnBox').show();
+        $('.footerBox').show();
+        $('.gameBox').hide();
+        startBtnDelay();
+        $('.home').show();
+        $('#poupInfoBox').hide();
+        $('.resuleBox').hide();
+        hg.fire('home');
+    }
+
+    function showGamePage(){
+        $('#ruleImg').hide();
+        $('.homeBtnBox').hide();
+        $('.footerBox').hide(); 
+        $('.home').hide();
+        $('#poupInfoBox').hide();
+        $('.resuleBox').hide();
+        $('.gameBox').show();
+        $('#gamePlayPanel').height($(window).height() - parseInt($('#gamePlayPanel').css('top').replace('px','')));
+    }
+
+</script>
+
+<script type="text/javascript">
+
+	//log下ajax的流水号111
+	$(document).ajaxComplete(function(event, jqXHR, options){
+		var ajaxInfo = {
+			flow: jqXHR.getResponseHeader('FAI-W-FLOW'),
+			url: options.url
+		};
+		HdGame.tlog('ajax', ajaxInfo);
+	});
+	HdGame.tlog((g_config.isAOpenId == 0 ? 'A' : 'B') + '类openId');
+	var count = 0;
+	var drawTimesLimit = 3;
+	var drawTotalLimit = 6;
+	var drawTimesLimitShow = 3;
+	var drawTotalLimitShow = 6;
+	var playTimesLimit = 5;
+	var playTotalLimit = 10;
+	var totalCount = 0;
+	var isLimitDraw = false;
+	var isLimitPlay = false;
+	var showAwardList = false;
+	var informNum = 0;
+	var playerAwardList = [];
+	var skillSupportType = 2;
+	var skillName = "";
+	var skillLink = HdGame.decodeUrl(HdGame.decodeHtml('http%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMjM5MTk5MjI3OA%3D%3D%26mid%3D209854000%26idx%3D1%26sn%3D82241d924839270d3ea820ad2d56c01b%23wechat_redirect'));
+	var gameType = 0;
+	var hideRank = false; // 是否隐藏排行榜
+	var style = 15;
+	var rankShowNum = 100;
+	var helpType = 1;
+	var addDrawTime = 1;
+	var remainHelpNum = 10;
+	var gameTimeType = 1;
+	var isPaymentGame = false;
+	var playerOrderList = []; 	// 支付类游戏下单信息
+    PlayInfo.initData(0, 0, 5, 5, 10, false);
+	if(style == 16) {
+		HdGame.tlog('wyyyyytttttestbpb isLimitPlay', isLimitPlay);
+		HdGame.tlog('wyyyyytttttestbpb playTotalLimit', playTotalLimit);
+		HdGame.tlog('wyyyyytttttestbpb totalPlayTimes', 0);
+	}
+	var drawStatusLuckDraw = true;
+	function luckDraw(fn, options){
+		
+			if(!drawStatusLuckDraw){
+				return;
+			}
+
+			var self = this;
+			var args = arguments;
+
+			function checkAreaLimit(){
+                HdGame.tlog('checkAreaLimit');
+				// if(g_config.isOpenAreaLimit){
+				// 	return HdGame.checkAreaLimitByWx(g_config.ipInfo, g_config.areaLimitList);
+				// }
+
+				return $.Deferred('resolve');
+			}
+			function checkAccessKeyOnce(){
+				HdGame.tlog('checkAccessKeyOnce');
+				
+
+				return $.Deferred('resolve');
+			}
+			function checkMemberCredit(){
+				if(g_config.isOpenCreditJoin){
+					return HdGame.checkMemberCredit();
+				}
+
+				return $.Deferred('resolve');
+			}
+			function checkMallLogin(){
+				return HdGame.checkMallLogin();
+			}
+			function checkMallJoinLimit(){
+				if(g_config.internalJoinLimit == 2){
+					return HdGame.checkMallJoinLimit();
+				}
+				return $.Deferred('resolve');
+			}
+			function beforeDraw(){
+				HdGame.tlog('beforeDraw');
+				if(hg.fireWith('beforeDraw', self, [args]) === false){
+					return $.Deferred('reject');
+				}
+				return $.Deferred('resolve');
+			}
+			function getResult(){
+				HdGame.tlog('getResult');
+				if($.inArray(7020498, [9850574, 8866115, 936152]) != -1){
+					HdGame.logStd("checkaaaaa------draw_gps_province=" + g_config.ipInfo.provice);
+					HdGame.logStd("checkaaaaa------draw_gps_city=" + g_config.ipInfo.city);
+				}
+				var params = {
+					gameId: 158,
+					style: 15,
+					userName: g_config.userName,
+					isPub: $.trim('1'),
+					headImg: g_config.headImg,
+					ip: '27.42.105.150',
+					city_gps: typeof g_config.ipInfo.city != 'undefined' ? g_config.ipInfo.city : '',
+					provice_gps: typeof g_config.ipInfo.provice != 'undefined' ? g_config.ipInfo.provice : '',
+				};
+				
+				
+
+				var url = HdGame.jointUrlArg("//7020498-158.hd.faisco.cn/ajax/hdgame_h.jsp", HdGame.jointParams({
+					cmd: "getResult",
+					aid: "7020498",
+					openId: "oosnVwuzoyEHE2a8ztSyhSbR3U60",
+					achieveToken: g_config.achieveToken,
+					playerOrigin: g_config.playerOrigin
+				}));
+
+				$.extend(params, options);
+
+				return $.ajax({
+					type: 'POST',
+					url: url,
+					data: params,
+					dataType: 'json'
+				});
+			}
+			function complete(result){
+				HdGame.tlog('complete');
+				HdGame.hideLoadToast();
+				HdGame.otherAjaxComplete();
+				drawStatusLuckDraw = true;
+				clearTimeout(HdGame.lotTimer);
+				hg.fireWith('afterDraw', self, [result]);
+			}
+			function handleResult(result){
+				
+				console.log('handle--');
+				HdGame.tlog('luckDraw: ', result);
+				complete(result);
+				result.playerId && (g_config.playerId = result.playerId);
+				gameType != 4 && result.rt >= 0 && g_config.style != 50 && g_config.playerChance--;
+
+				if(result.success){
+					$('#resule-gift-box').attr('_level', result.awardIndex);
+					g_config.haveAward = true;
+					$('.resule-status-send').html('查看我的奖品');
+				}else if(result.rt === 60 || result.rt === 28){
+					$('.resule-status-box').hide();
+				}else if(result.rt === 3){
+					console.log('----hhh');
+					$('.resule-status-box').show();
+				}else{
+					if(result.rt === 27 && result.op === 'getGameResult'){
+						$('.resuleBox').hide();
+						HdGame.showLotsWait(5, function(){
+							$('.resuleBox').show();
+							luckDraw(fn, options);
+						});
+					}else if(result.rt === 1){
+						count = drawTimesLimit;
+						var msgText = 4;
+						$(".dayDrawCount").text(0);
+						HdGame.statusMsg(msgText);
+						if(!g_config.showHelpGuide){
+							$('#resule-gift-box').hide();
+						}
+						home('luckDraw');
+					}else if(result.rt === 13){
+						HdGame.statusMsg(6);
+						count = drawTimesLimit;
+						totalCount = drawTotalLimit;
+						$('.dayDrawCount').text(0);
+						$('.totalDrawCount').text(0);
+						$('#resule-gift-box').hide();
+						home('luckDraw');
+					}else if(result.rt === -3 || result.rt === 23 || result.rt === 46){
+						HdGame.statusMsg(result.msg || '系统繁忙，请稍后重试！');
+					}else{
+						HdGame.showMsg(result.msg || '系统繁忙，请稍后重试！', 0, '关闭', function(){
+							if(g_config.style == 66){
+								window.location.href = HdGame.removeUrlArg(document.URL, 'state', 'code');
+							}
+						}, true);
+						home('luckDraw');
+					}
+					return;
+				}
+
+				if(gameType != 4){
+					console.log(gameType);
+					count++;
+					HdGame.tlog('wyyyyytttttestfkttt count2=', count);
+					$('.dayDrawCount').text(drawTimesLimit-count < 0 ? 0 : (drawTimesLimit - count));
+					totalCount++;
+
+					$('.totalDrawCount').text(drawTotalLimit - totalCount < 0 ? 0 : (drawTotalLimit - totalCount));
+					if( (drawTimesLimit - count <= 0 || drawTotalLimit-totalCount <= 0) && ( (helpType == 2 && g_config.showHelpGuide) || (helpType == 3 && remainHelpNum != 0) ) ){
+						if(!isLimitDraw){
+							$('.totalDraw').hide();
+							$('.dayDraw').text('点击获取抽奖机会>>');
+							$('.dayDraw').on('click', getMoreTimes);
+						}else{
+							$('.totalDraw').text('点击获取抽奖机会>>');
+							$('.totalDraw').on('click', getMoreTimes);
+							$('.dayDraw').hide();
+							if( (drawTimesLimit - count) < (drawTotalLimit - totalCount) ){
+									$('.dayDraw4Total').text('今天抽奖机会已用完，点击获取更多抽奖机会').parent().addClass('flex-direction_column');
+									$('.dayDraw4Total').on('click', getMoreTimes);
+									// $('.dayDraw4Total').css('width', '16rem');
+									$('.totalDraw').off('click')
+									if($('.dayDraw4Total').parent().attr('id') == 'drawInfo'){
+										$('.dayDraw4Total').css('margin-left', '-2.5rem');
+									}
+									var num = drawTotalLimit - totalCount < 0 ? 0 : (drawTotalLimit - totalCount);
+									$('.totalDraw').html('总抽奖机会剩 <span class="totalDrawCount specil">' + num + '</span> 次');
+							}
+						}
+					}else{
+						$('.dayDraw').off('click');
+						$('.totalDraw').off('click');
+						$('.dayDraw4Total').off('click');
+					}
+				}
+
+				var arg = {
+					isSuc: result.success,
+					giftStyle: result.awardStyle,
+					giftName: result.awardName,
+					giftCode: result.awardCode,
+					awardTypeNum: result.awardTypeNum,
+					giftImage: result.awardImage,
+					awardImageW: result.awardImageW,
+					awardImageH: result.awardImageH,
+					awardIndex: result.awardIndex,
+					isOutAwardNum: result.rt === 3,
+				};
+				if(HdGame.getType(fn) === 'function'){
+					fn(arg, result);
+				}else{
+					HdGame.resulePoup.showGift(arg);
+				}
+			}
+			function handleFail(){
+				complete({
+					success: false,
+					rt: -999,
+					msg: '系统繁忙，请稍后重试！',
+				});
+			}
+
+			HdGame.showLoadToast('数据加载中');
+			drawStatusLuckDraw = false;
+			$('.ajaxLoadBg').show();
+			$('.ajaxLoadBar').addClass('ajaxLoad');
+			$.Deferred('resolve')
+				.then(checkAreaLimit)
+				.then(checkAccessKeyOnce)
+				.then(checkMemberCredit)
+				.then(checkMallLogin)
+				.then(checkMallJoinLimit)
+				.then(beforeDraw)
+				.then(getResult)
+				.then(handleResult)
+				.fail(handleFail);
+		
+	}
+
+    function luckDrawZhuliNew(fn, option, config) {
+		if(!drawStatusLuckDraw || _manage){
+			return;
+		}
+		HdGame.showLoadToast('数据加载中');
+		drawStatusLuckDraw = false;
+		$('.ajaxLoadBg').show();
+		$('.ajaxLoadBar').addClass('ajaxLoad');
+		var params = {
+			gameId: 158,
+			zlid: ([61, 106].indexOf(g_config.style) !== -1) ? zlid : -1,
+			city_gps: typeof g_config.ipInfo.city != 'undefined' ? g_config.ipInfo.city : '',
+			province_gps: typeof g_config.ipInfo.provice != 'undefined' ? g_config.ipInfo.provice : ''
+		};
+		$.extend(params,option);
+
+		var conf = $.extend({
+            ajaxName: 'getResult',
+        }, config);
+
+		$.ajax({
+			type : 'post',
+			url : '//7020498-158.hd.faisco.cn/ajax/hdzhuli_h.jsp?cmd=' + conf.ajaxName + '&aid=7020498&openId=oosnVwuzoyEHE2a8ztSyhSbR3U60',
+			data : params,
+			error : function(err,errObj){
+				if(m_debug){
+					alert( '服务繁忙，请稍候重试' );
+				}
+				HdGame.hideLoadToast();
+				HdGame.otherAjaxComplete();
+				drawStatusLuckDraw = true;
+				
+				hg.fire("luckDrawErr");
+			},
+			success : function(data){
+				HdGame.hideLoadToast();
+				HdGame.tlog('luckDrawZhuliNew',data);
+				HdGame.otherAjaxComplete();
+				drawStatusLuckDraw = true;
+				var result = $.parseJSON(data);
+				setNoLiheWxShare && setNoLiheWxShare();
+				result.rt >= 0 && g_config.playerChance--;
+				if(result.success){
+					g_config.haveAward = true;
+				}else if(result.rt === 60 ||  result.rt === 28){
+					$('.resule-status-box').hide();
+				}else if(result.rt === 3){
+					$(".resule-status-box").show();
+				}else{
+					if( result.rt === 8 || result.rt === 23 || result.rt === 35 || result.rt === 46){
+						console.log('here444');
+						HdGame.statusMsg(result.msg);
+					}else{
+						HdGame.showMsg("系统繁忙，请稍后重试",0,"关闭",function(){},true);
+					}
+					return;
+				}
+				var arg={
+					isSuc:result.success,
+					giftStyle:result.awardStyle,
+					giftName:result.awardName,
+					giftCode:result.awardCode,
+					giftImage:result.awardImage,
+					awardImageW:result.awardImageW,
+					awardImageH:result.awardImageH,
+					awardIndex:result.awardIndex,
+					isOutAwardNum:result.rt === 3,
+				};
+				if(HdGame.getType(fn) === 'function'){
+					fn(arg,result);
+				}else{
+					HdGame.resulePoup.show(arg);
+				}
+			}
+		});
+	}
+
+	//改版前的联系兑奖提示语
+	HdGame._awardLinkMsg = '获奖者需填写联系电话方可查看兑奖码兑奖';
+	HdGame._luckDrawFunc = luckDraw;
+	//hdgame.src.js中判断游戏是否开启两位小数点  jmin
+	HdGame._showTowPointNum = !true;
+
+	
+		
+	
+
+	
+
+	
+
+	HdGame.initChangePoup({
+		rankUrl        : '',
+		awardUrl       : '',
+		getRegAwardUrl : '',
+		openId         : 'oosnVwuzoyEHE2a8ztSyhSbR3U60',
+		gameId         : 158,
+		mhaveScore     : (true && gameType != 3),
+		informUrl      : '',
+		hasReport      : false,
+		afterWxCard    : true
+	});
+	HdGame.resulePoup.init({
+		drawType  : 1,
+		checkRegUrl:'',
+		regUrl    : '',
+		home      : typeof home !== 'undefined' ? home : null,
+		again     : typeof gameRestart !== 'undefined' ? gameRestart : null,
+		giftInit  : HdGame._luckDrawFunc,
+	});
+   HdGame.initJsFoot({"rulesortstr":"abcde","drawType":1,"hostName":"凡科","hostLink":"http://","menuLink":"","fromFav":"","openAwardExp":true,"isHideFxts":true,"supportUrl":"http://mp.weixin.qq.com/s?__biz=MjM5MTk5MjI3OA==&mid=209854000&idx=1&sn=82241d924839270d3ea820ad2d56c01b#rd","isAdverQRCode":false,"skillSupport":"凡科互动","showJoinNum":false,"showRedDot":false,"showMDRedDot":false,"showAwardBtn":false,"isSelAwardLine":false,"showSkillSup":true,"menuStyle":3,"soundIcon_l":"0.75rem","soundIcon_t":"1rem","titleImg_path_def":"//hdg.faisys.com/image/csyx/titleImg.png","startImg_path_def":"//hdg.faisys.com/image/csyx/startBtn.png","awardIconImgPath_def":"//hdg.faisys.com/image/ruleImg_purple.png","titleImg_w_def":"13rem","titleImg_h_def":"4rem","startBtn_w_def":"7.5rem","startBtn_h_def":"3rem","logoImg_w_def":"2rem","logoImg_h_def":"2rem","awardIcon_w_def":"3rem","awardIcon_h_def":"3rem","homeBgPath_def":"//hdg.faisys.com/image/csyx/homeBg.jpg","gameBg2Path_def":"","gameBgPath_def":"//hdg.faisys.com/image/csyx/gameBg.jpg","headImg2":"","headImg3":"","headImg4":"","dangerType":1,"isZhuLi":false,"getRegAwardUrl":"//7020498-158.hd.faisco.cn/ajax/hdgame_h.jsp?cmd=getRegAwardList&aid=7020498&gameId=158&style=15&openId=oosnVwuzoyEHE2a8ztSyhSbR3U60","isHideTitle":false})
+
+	function startBtnDelay(){
+		$('.titleImg').removeClass('titleDown').addClass('titleDown');
+		$('#startBtnImg').removeClass('startTada');
+		
+		hg.sound.pauseAll();
+		
+		setTimeout(function(){
+			$('#startBtnImg').addClass('startTada');
+		},1000);
+	}
+	function showAwardDetail4Draw(fromFav){
+		HdGame.changePoup(3,'',true);
+		home('showAward',fromFav);
+		if(g_config.isYKY){
+			$('#poupInfoBox').show();
+		}
+	}
+	function showRank(){
+		HdGame.changePoup(1,'',true);
+		$('#awardDetailBox').hide();
+	}
+	function showRule(isAnimation){
+		$('#activityKit').hide();
+		if(g_config.withAwardFinish){
+			HdGame.changePoup(2,'',true);
+		}else{
+			HdGame.changePoup(2,'',isAnimation);
+		}
+		$('#awardDetailBox').hide();
+	}
+	function activateSound(){ //兼容ios下 WebAudio类型的对象无法自动播放，必须在点击事件中播放过一次，才允许播放
+		try{
+			if(HdGame.isIPhone() && hg.sound.list && hg.sound.list.length > 0 && !hg.sound._activate){
+				$.each(hg.sound.list, function(i, val) {
+					var data = hg.sound.cache[i];
+					if(i > 0 && data && data.soundType == "LWebAudio"){
+						data.play();
+						data.stop();
+					}
+				});
+				hg.sound._activate = true;
+			}
+			if(HdGame.isIPhone()){
+				hg.sound.cache['yiy'].play();
+				hg.sound.cache['yiy'].stop();
+			}
+		}catch(e){
+			HdGame.logStd("activateSoundErr",e);
+		}
+	}
+	function startBtnAjax(event, data, callback){
+		
+		function showGame(){
+			
+			$('.homeBtnBox').hide();
+			// $('.homeBtnBox,.bottomSkill').hide();     // 技术支持
+			// $('.footerBox').hide();					 // 宣传标语
+			$('.home,#ruleImg').hide();
+			$('.gameBox').show();
+			if(typeof hg.sound.cache[0] !== 'undefined' && typeof hg.sound.cache[0].playing !== 'undefined' && !hg.sound.cache[0].playing && g_config.style != 48 && g_config.style != 49 && g_config.style != 69){
+				hg.sound.readyPlay(0, 0, 'loop');
+			}
+		}
+		
+			showGame();
+			hg.fireWith('startGame', self, [false, event, data, showGame]);
+	}
+
+	
+
+	
+		function gameOver(_gameScore, callBack, option, showAjaxBar){
+			
+				if(_gameScore === 'fail'){
+					setTimeout(function(){
+						HdGame.resulePoup.show({
+							isSuc:false,
+							gameScore:"fail",//闯关失败
+							minScore:100,
+							bestScore:'无',
+							gameType:gameType,
+							rank:0,
+							count:drawTimesLimit-count<0 ? 0:(drawTimesLimit-count),
+							isLimitDrawTotal:isLimitDraw,
+							totalCount: drawTotalLimit - totalCount < 0 ? 0 : (drawTotalLimit - totalCount)
+						});
+					},900);
+					return;
+				}
+				if(isNaN(_gameScore) || _gameScore < 0){
+					_gameScore = 0;
+				}
+				if(false){//奥运男篮游戏没有开始按钮，点击支持直接调gameOver;
+					if(g_config.afterLinkModify && HdGame.shouldRegInfo(2,arguments,this)){
+						return;
+					}
+				}else{
+					var infoType = 1;
+					if(gameType == 3 || gameType == 1){
+						infoType = 3;
+					}
+					if(gameType != 1 && HdGame.shouldRegInfo(infoType,arguments,this)){
+						return;
+					}
+				}
+				$('.ajaxLoadBg').show();
+				$('.ajaxLoadBar').addClass('ajaxLoad');
+				HdGame.showLoadToast('数据加载中');
+				var _gameScoreStr = _gameScore + '';
+				if(false){
+					_gameScoreStr = changeTwoDecimal_f(_gameScore);
+				}
+				var info = {headImg : "http://thirdwx.qlogo.cn/mmopen/vi_32/Ru3iaBuiacR7Z0Micm3qR3se3FvHIaun7hfiaibCYudfnxFoHbYk51b4x771M0bmibG2iaiaq3Zay8Y29JNiazdEaTWDq4Q/"};
+				g_config.awardUsername && (info.ausername = g_config.awardUsername);
+				g_config.awardPhone && (info.aphone = g_config.awardPhone);
+				g_config.awardAddress && (info.aadress = g_config.awardAddress);
+				info.ip = '27.42.105.150';
+				var params = {
+					gameId: 158,
+					style: 15,
+					achieve: HdGame.encodeBase64('"'+_gameScoreStr+'"') + "3W4mfD340m934D72cTdwfzMkZmN0UzM",
+					openId: "oosnVwuzoyEHE2a8ztSyhSbR3U60",
+					name: g_config.userName,
+					awardInfoB: g_config.awardInfoB,
+					city_gps: typeof g_config.ipInfo.city != 'undefined' ? g_config.ipInfo.city : '',
+					province_gps: typeof g_config.ipInfo.provice != 'undefined' ? g_config.ipInfo.provice : ''
+				};
+				HdGame.tlog("userName",g_config.userName);
+				
+				params.info = $.toJSON(info);
+				if(false){
+					params.fromPlayer = "";
+				}
+				if(false){
+					var consumption = hg.time.gameCostTime.toFixed(2);
+					if(gameTimeType ==2){
+						consumption = ((new Date().getTime() - g_config.gameStartTime)/1000).toFixed(2);
+					}
+					params.consumption = HdGame.encodeBase64('"'+consumption+'"') + "3W4mfD340m934D72cTdwfzMkZmN0UzM";
+				}
+				
+				if(_ruleInfo.open){
+					params._ruleInfo = $.toJSON(_ruleInfo);
+				}
+				$.extend(params,option);
+				
+				// JesBrian TODO: 进了 error rt === -999 需要尝试再发一次请求
+				$.ajax({
+					type : 'post',
+					url : '//7020498-158.hd.faisco.cn/ajax/hdgame_h.jsp?cmd=setAchieve&aid=7020498&playerId='+g_config.playerId+'&gameScore='+_gameScore+'&playerOrigin='+g_config.playerOrigin,
+					data : params,
+					error : function(){
+						HdGame.hideLoadToast();
+						HdGame.otherAjaxComplete();
+						$('#timeUpImg,.timeUpImg').removeClass('tada');
+						var rt = {
+							rt: -999,
+							// msg: "ajax返回错误" // JesBrian 替换下提示让客户玩家浅显易懂
+							msg: "网络异常，请重新刷新页面进入游戏"
+						};
+						if (!window.navigator.onLine) {
+							rt.msg = "网络连接失败，请检查你的网络设置!";
+						}
+						if (callBack) {
+							if (callBack(rt, rt)) {
+								alert(rt.msg);
+							}
+						} else {
+							alert(rt.msg);
+						}
+						HdGame.logStd('gameOverErr', $.toJSON(arguments));
+					},
+					success : function(data){
+						HdGame.hideLoadToast();
+						HdGame.tlog('gameOver',data);
+						var r = $.parseJSON(data);
+var isShowPoup = true;
+						if(!showAjaxBar){
+							HdGame.otherAjaxComplete();
+						}
+						if(r.rt == 0){
+							var arg={
+								isSuc:r.isSuc,
+								gameScore:_gameScoreStr,
+								minScore:r.drawLimit,
+								bestScore:r.score,
+								gameType:gameType,
+								rank:r.rank,
+								beat:r.beat,
+								count:drawTimesLimit-count<0 ? 0:(drawTimesLimit-count),
+								isLimitDrawTotal:isLimitDraw,
+								totalCount:	drawTotalLimit-totalCount<0 ? 0:(drawTotalLimit-totalCount),
+								isEqualDraw:false,
+								gameCostTime:consumption,
+								bestCostTime:r.bestCostTime
+							};
+							HdGame.tlog("wyyyyytttttestfkttt drawTimesLimit=", drawTimesLimit);
+							HdGame.tlog("wyyyyytttttestfkttt count1=", count);
+							g_config.style == 69 && HdGame.logDog(1000427, 3);
+							setTimeout(function(){
+								var callBackArg = {rt:r.rt,msg:r.msg,arg:arg,pId:r.playerId,firstScore : r.firstScore};
+								if(r.playerId){
+									g_config.playerId = r.playerId;
+								}
+								if(false){
+									callBackArg.infoList = r.infoList;
+								}
+								callBack && (isShowPoup = callBack(callBackArg,r));
+								$('#timeUpImg,.timeUpImg').removeClass('tada');
+								isShowPoup !== false && HdGame.resulePoup.show(arg);
+							},300);
+							PlayInfo.addPlayTimes(1);
+							g_config.achieveToken = r.achieveToken;
+							[0,4].indexOf(gameType) == -1 && g_config.playerChance--;
+						}else if(r.rt == 11){
+							HdGame.showMsg("已被检测到有作弊行为，再次被检测将永久禁止参与本游戏！", 500, "确定");
+						}else if(r.rt == 12){
+							HdGame.showMsg("由于作弊行为，该微信号已永久禁止参与本游戏！", 500, "确定");
+						}else if(r.rt == 48){
+							HdGame.showMsg("已检测到作弊行为，当前无法获取成绩！", 500, "确定");
+						}else if(r.rt == 23){
+							HdGame.statusMsg(3);
+						}else if (r.rt == 44) {
+							HdGame.statusMsg(8);
+						}else if (r.rt == 52) {
+							HdGame.statusMsg("出现错误，请重新刷新页面进入游戏", 500, 0, "确定", function () {
+                                window.location.reload();
+                            });
+						}else{
+							callBack && (isShowPoup = callBack({rt:r.rt,msg:r.msg},r));
+							if(isShowPoup !== false){
+								HdGame.logStd("gameOverErr",'style='+g_config.style+' gameScore='+_gameScore+' faiOpenId= data='+$.trim(data));
+								HdGame.resulePoup.show({
+									isSuc:false,
+									gameScore:'--',
+									minScore:r.drawLimit,
+									bestScore:'--',
+									gameType:gameType,
+									rank:'--',
+									beat:'--',
+									count:drawTimesLimit-count<0 ? 0:(drawTimesLimit-count),
+									isLimitDrawTotal:isLimitDraw,
+									totalCount: drawTotalLimit-totalCount<0 ? 0:(drawTotalLimit-totalCount),
+									isEqualDraw:false
+								});
+							}
+							return;
+						}
+						if(r.rt !== 0){
+							callBack && callBack({rt:r.rt,msg:r.msg},r);
+						}
+					}
+				});
+
+				params = info = option = null;
+				function changeTwoDecimal_f(x) {
+					var f_x = parseFloat(x);
+					if (isNaN(f_x)) {
+						alert('function:changeTwoDecimal arguments error');
+						return x;
+					}
+					var f_x = Math.round(x * 100) / 100;
+					var s_x = f_x.toString();
+					var pos_decimal = s_x.indexOf('.');
+					if (pos_decimal < 0) {
+						pos_decimal = s_x.length;
+						s_x += '.';
+					}
+					while (s_x.length <= pos_decimal + 2) {
+						s_x += '0';
+					}
+					return s_x;
+				}
+			
+		}
+	
+
+	hg.on('beforeDraw',function(_arguments){
+		
+		var thisInfoType = 2;
+		if(g_config.afterLinkModify && HdGame.shouldRegInfo(thisInfoType,_arguments,this)){
+			hg.fire('afterLinkModify');
+			return false;
+		}
+		thisInfoType = 3;
+		if(g_config.afterLinkModify && HdGame.shouldRegInfo(thisInfoType,_arguments,this)){
+			hg.fire('afterLinkModify');
+			return false;
+		}
+	}).on('luckDrawErr',function(){
+		
+		HdGame.showMsg('网络无法连接，请检查网络', 0, '关闭', function(){
+			HdGame.resulePoup.startStatus = true;
+		},true);
+	});
+
+	var createActiveForMinapp = $.throttle(function(){
+		HdGame.logDog(1000260, 2);  //点击马上创建log
+		wx.miniProgram.redirectTo({url: '/pages/editActive/editActive?page=base&modId=0'});
+	}, 200);
+
+	var shareActiveForMinapp = $.throttle(function(){
+		wx.miniProgram.navigateTo({url: '/pages/shareActive/shareActive?aid=7020498&gameId=158'});
+	}, 200);
+
+	function getMoreTimes(){
+	    return HdGame.refreshDrawTimes().then(function (res) {
+            if (!res) {
+                if(false && totalCount >= drawTotalLimit){
+                    HdGame.statusMsg(6);
+                    return;
+                }
+                if (true && count >= drawTimesLimit) {
+                    HdGame.statusMsg(4);
+                    return;
+                }
+            }
+        });
+	}
+
+	$(function(){
+		/**
+		 * 管理态监听编辑页的事件
+		 */
+		
+		/**
+		 * 管理态监听广告修改的事件
+		 */
+		
+
+		
+
+		if(_manage){
+			$("#resule-gift-sucImg").parent().append('<span class="hd-left-arrow theArrowSpan hide"></span><span class="hd-right-arrow theArrowSpan hide"></span>');
+		}else{
+			HdGame.showWxCodePage(null, "http://m.faibak.com/hd/manage/myCardBag.jsp", "https://7020498-158.hd.faisco.cn/csyx.jsp?id=XW6aET6TwajvMPvag7rcdA&aid=7020498&hasReAuth=true&code=081PzLPO04WUm62gg9RO08AxPO0PzLPR&state=STATE&appid=wx50775cad5d08d7ad");
+			HdGame.tlog('history',history.length);
+		}
+
+		var awardIconImgPath = HdGame.getWebpOrOtherImg("https://7020498.h40.faiusr.com/4/158/ACgIABAEGAAgmdXH0QUo3eymmgcweDh4.png");
+		HdGame.imgReady(awardIconImgPath,function(){
+			var originSize = {width:$("#ruleImg").width(),height:$("#ruleImg").height()};
+			var nowSize = HdGame.Img.calcSize(this.width,this.height,originSize.width,originSize.height,HdGame.Img.MODE_SCALE_DEFLATE_FILL);
+			$("#ruleImg").css({
+				"background-size": "100% 100%",
+				"background-image":"url(img/hdjl.png)",
+			}).attr("_src",awardIconImgPath);
+		});
+
+		
+			(function () {
+				if (!HdGame.IsPC()) {
+					var playBgFlag = false;
+					$(window).on("blur", function (e) {
+						if (window.frames["contactInputIframe"]) return;
+						if (hg.sound.get(0) && hg.sound.get(0).playing && !playBgFlag) {
+							hg.sound.pause(0);
+							playBgFlag = true;
+						}
+					}).on("focus", function (e) {
+						if (window.frames["contactInputIframe"]) return;
+						if (playBgFlag) {
+							playBgFlag = false;
+							hg.sound.play(0);
+						}
+					});
+				}
+			} ());
+		
+
+		hg.fire('jsFootEnd');
+	});
+</script>
+
+
+<script type="text/javascript">
+	
+	$.ajaxSettings.errorCall.push(function(callbackContext, status, error){
+        if(/logAjaxErr_h\.jsp/.test(callbackContext.url) && /cmd=hdajaxErr/.test(callbackContext.url)){
+            return;
+        }
+		var faiAjax = Fai.top._faiAjax || $;
+		if( faiAjax ){
+			
+		}
+	});
+	
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
